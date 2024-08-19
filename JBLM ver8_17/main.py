@@ -22,7 +22,7 @@ def run_app():
         # app.setStyleSheet(homie_stylesheet)
         window = MainWindow()
         window.show()
-        window.setFixedSize(480, 640)
+        window.setFixedSize(640, 480)
         sys.exit(app.exec())
     except (ValueError, TypeError) as e:
         logger.error(f"Value or Type error occurred {e}", exc_info=True)

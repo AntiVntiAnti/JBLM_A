@@ -1038,7 +1038,7 @@ class MainWindow(FramelessWindow, QtWidgets.QMainWindow, Ui_MainWindow):
     def switch_to_agenda_page(self):
         self.switch_page2(
             self.agendaInputPage,
-            480, 640
+            640, 480
         )
     
     def switch_to_agenda_data_page(self):
