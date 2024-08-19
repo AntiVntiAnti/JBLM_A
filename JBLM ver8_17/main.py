@@ -3,7 +3,7 @@ from ui.app import MainWindow
 import sys
 from logger_setup import logger
 from ui.main_ui import res
-# pyrcc5 resources.qrc -o resources.py  DON'T FORGET this ya dope! :D
+# pyrcc5 resources.qrc -o resources.py  I am almost 100% with the not forgetting this :D
 
 
 def run_app():
@@ -16,7 +16,7 @@ def run_app():
     Raises:
         Exception: If an error occurs during the execution of the application.
     """
-    logger.debug("ENTER BY PORTAL START YES!")
+    logger.debug("Entry Point begat'th")
     try:
         app = QApplication(sys.argv)
         # app.setStyleSheet(homie_stylesheet)

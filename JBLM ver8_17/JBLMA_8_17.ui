@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>279</width>
+    <width>325</width>
     <height>348</height>
    </rect>
   </property>
@@ -16,7 +16,7 @@
   <property name="styleSheet">
    <string notr="true">QWidget {
 	font: 11pt &quot;Helvetica&quot;;
-    background:#151515;
+    background:#121212;
     color:rgb(255,255,255);
 }
 
@@ -1263,8 +1263,8 @@ font:9pt &quot;Arial&quot;;
 border:none;
 font-weight:900;
 padding:4px;
-min-width:25px;
-max-width:25px;
+min-width:35px;
+max-width:35px;
 max-height:20px;
 min-height:20px;
 text-align:center;
@@ -1410,7 +1410,7 @@ AGENDA SIDEBAR BTNs
                 <widget class="QPushButton" name="thurs_journal_nav_btn">
                  <property name="maximumSize">
                   <size>
-                   <width>33</width>
+                   <width>43</width>
                    <height>28</height>
                   </size>
                  </property>
@@ -1587,7 +1587,7 @@ AGENDA SIDEBAR BTNs
                 <widget class="QPushButton" name="sat_journal_nav_btn">
                  <property name="maximumSize">
                   <size>
-                   <width>33</width>
+                   <width>43</width>
                    <height>28</height>
                   </size>
                  </property>
@@ -1646,7 +1646,7 @@ AGENDA SIDEBAR BTNs
                 <widget class="QPushButton" name="mon_journal_nav_btn">
                  <property name="maximumSize">
                   <size>
-                   <width>33</width>
+                   <width>43</width>
                    <height>28</height>
                   </size>
                  </property>
@@ -1671,7 +1671,7 @@ AGENDA SIDEBAR BTNs
                 <widget class="QPushButton" name="tues_journal_nav_btn">
                  <property name="maximumSize">
                   <size>
-                   <width>33</width>
+                   <width>43</width>
                    <height>28</height>
                   </size>
                  </property>
@@ -1696,7 +1696,7 @@ AGENDA SIDEBAR BTNs
                 <widget class="QPushButton" name="wed_journal_nav_btn">
                  <property name="maximumSize">
                   <size>
-                   <width>33</width>
+                   <width>43</width>
                    <height>28</height>
                   </size>
                  </property>
@@ -1721,7 +1721,7 @@ AGENDA SIDEBAR BTNs
                 <widget class="QPushButton" name="fri_journal_nav_btn">
                  <property name="maximumSize">
                   <size>
-                   <width>33</width>
+                   <width>43</width>
                    <height>28</height>
                   </size>
                  </property>
@@ -2829,23 +2829,20 @@ QTimeEdit:focus {color: rgb(172,167,255);}
                  <string notr="true">QFrame {background: transparent;}
 QPushButton {
 padding:4px;
-border-radius:21px;
 border:2px solid rgb(90,98,200);
 background:transparent;
-min-width:30px;
-max-width:30px;
-min-height:30px;
-max-height:30px;
+
 }
 QPushButton:hover {
-margin-top:1px;border-radius:20px;
-margin-left:2px;
-border:2px solid rgb(130,138,240);
+margin-top:1px;
+margin-left:1px;
+border:2px solid rgb(90,98,200);
+background:rgb(90,98,200);
 }
 
 QPushButton:pressed {
-	margin-top:2px;border-radius:20px;
-	margin-left:0px;border:2px solid rgb(127, 135, 182);
+	margin-top:0px;
+	margin-left:0px;border:2px solid rgb(90,98,200);
 }</string>
                 </property>
                 <layout class="QGridLayout" name="gridLayout_10">
@@ -2859,26 +2856,26 @@ QPushButton:pressed {
                   <number>0</number>
                  </property>
                  <property name="bottomMargin">
-                  <number>4</number>
+                  <number>0</number>
                  </property>
-                 <property name="horizontalSpacing">
-                  <number>9</number>
-                 </property>
-                 <property name="verticalSpacing">
+                 <property name="spacing">
                   <number>0</number>
                  </property>
                  <item row="0" column="1">
                   <widget class="QPushButton" name="eight_ounce_cup">
                    <property name="styleSheet">
-                    <string notr="true">QPushButton {
+                    <string notr="true">QPushButton {min-width:25px;
+max-width:25px;
+min-height:25px;
+max-height:25px;
+border-radius:18;
 image: url(:/newPrefix/waterBottles/8ozWaterBottle.png);
 }
-QPushButton:hover {
-image:url(:/newPrefix/waterBottles/8Ozhover.png);
+QPushButton:hover {border-radius:17;
+
+image: url(:/newPrefix/waterBottles/8ozpress.png);
 }
-QPushButton:pressed {
-image:url(:/newPrefix/waterBottles/8ozWaterPressed.png);
-}</string>
+</string>
                    </property>
                    <property name="text">
                     <string/>
@@ -2888,15 +2885,16 @@ image:url(:/newPrefix/waterBottles/8ozWaterPressed.png);
                  <item row="0" column="7">
                   <widget class="QPushButton" name="thirty_two_ounce_cup">
                    <property name="styleSheet">
-                    <string notr="true">QPushButton {
+                    <string notr="true">QPushButton {min-width:40px;
+max-width:40px;
+min-height:40px;
+max-height:40px;
+border-radius:26;
 	image: url(:/newPrefix/waterBottles/32oz.png);
-
 }
 QPushButton:hover {
-	image: url(:/newPrefix/waterBottles/32ozhover.png);}
-
-QPushButton:pressed {
-	image: url(:/newPrefix/waterBottles/32ozpresss.png);}</string>
+border-radius:25;
+image: url(:/newPrefix/waterBottles/32ozpress.png);}</string>
                    </property>
                    <property name="text">
                     <string/>
@@ -2946,12 +2944,17 @@ QPushButton:pressed {
                   <widget class="QPushButton" name="sixteen_ounce_cup">
                    <property name="styleSheet">
                     <string notr="true">QPushButton {
+min-width:30px;
+max-width:30px;
+min-height:30px;
+max-height:30px;
+border-radius:21;
 image: url(:/newPrefix/waterBottles/16ozWaterbottle.png);
 
 }
-QPushButton:hover {image: url(:/newPrefix/waterBottles/16ozHover.png);}
+QPushButton:hover {image: url(:/newPrefix/waterBottles/16ozpress.png);border-radius:20;}
 
-QPushButton:pressed {image: url(:/newPrefix/waterBottles/16ozPressed.png);}</string>
+</string>
                    </property>
                    <property name="text">
                     <string/>
@@ -2975,15 +2978,27 @@ QPushButton:pressed {image: url(:/newPrefix/waterBottles/16ozPressed.png);}</str
                   <widget class="QPushButton" name="twenty_four_ounce_cup">
                    <property name="styleSheet">
                     <string notr="true">QPushButton {
+min-width:35px;
+max-width:35px;
+min-height:35px;
+max-height:35px;
+border-radius:23;
 	image: url(:/newPrefix/waterBottles/24ox.png);
 
 }
-QPushButton:hover {image: url(:/newPrefix/waterBottles/24oxhober.png);}
-
-QPushButton:pressed {image: url(:/newPrefix/waterBottles/24oxpress.png);}</string>
+QPushButton:hover {
+image: url(:/newPrefix/waterBottles/24ozPress.png);
+border-radius:22;}
+</string>
                    </property>
                    <property name="text">
                     <string/>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>24</width>
+                     <height>24</height>
+                    </size>
                    </property>
                   </widget>
                  </item>
@@ -3128,12 +3143,15 @@ background-color: rgb(90,98,200);
                <number>0</number>
               </property>
               <property name="topMargin">
-               <number>0</number>
+               <number>6</number>
               </property>
               <property name="rightMargin">
                <number>0</number>
               </property>
               <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <property name="spacing">
                <number>0</number>
               </property>
               <item row="1" column="1">
@@ -3258,10 +3276,16 @@ QPushButton:hover {
                 <property name="styleSheet">
                  <string notr="true">
 QPushButton {
+min-height:40px;
+max-height:40px;
+min-width:40px;
+max-width:40px;
+border-radius:28;
 image:url(:/newPrefix/blueteeth.png);
 }
 
 QPushButton:hover {
+border-radius:27;
 image:url(:/newPrefix/teethPressed.png);}
 </string>
                 </property>
@@ -7262,7 +7286,7 @@ QDateEdit:focus {color: rgb(172,167,255);}
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>279</width>
+     <width>325</width>
      <height>16</height>
     </rect>
    </property>
@@ -7558,7 +7582,7 @@ QDateEdit:focus {color: rgb(172,167,255);}
     <string>Sunday</string>
    </property>
    <property name="shortcut">
-    <string>Alt+1</string>
+    <string>Meta+1</string>
    </property>
   </action>
   <action name="actionViewJournalMon">
@@ -7566,7 +7590,7 @@ QDateEdit:focus {color: rgb(172,167,255);}
     <string>Monday</string>
    </property>
    <property name="shortcut">
-    <string>Alt+2</string>
+    <string>Meta+2</string>
    </property>
   </action>
   <action name="actionViewJournalTues">
@@ -7574,7 +7598,7 @@ QDateEdit:focus {color: rgb(172,167,255);}
     <string>Tuesday</string>
    </property>
    <property name="shortcut">
-    <string>Alt+3</string>
+    <string>Meta+3</string>
    </property>
   </action>
   <action name="actionViewJournalWed">
@@ -7582,7 +7606,7 @@ QDateEdit:focus {color: rgb(172,167,255);}
     <string>Wednesday</string>
    </property>
    <property name="shortcut">
-    <string>Alt+4</string>
+    <string>Meta+4</string>
    </property>
   </action>
   <action name="actionViewJournalThurs">
@@ -7590,7 +7614,7 @@ QDateEdit:focus {color: rgb(172,167,255);}
     <string>Thursday</string>
    </property>
    <property name="shortcut">
-    <string>Alt+5</string>
+    <string>Meta+5</string>
    </property>
   </action>
   <action name="actionViewJournalFri">
@@ -7598,7 +7622,7 @@ QDateEdit:focus {color: rgb(172,167,255);}
     <string>Friday</string>
    </property>
    <property name="shortcut">
-    <string>Alt+6</string>
+    <string>Meta+6</string>
    </property>
   </action>
   <action name="actionViewJournalSat">
@@ -7606,7 +7630,7 @@ QDateEdit:focus {color: rgb(172,167,255);}
     <string>Saturday</string>
    </property>
    <property name="shortcut">
-    <string>Alt+7</string>
+    <string>Meta+7</string>
    </property>
   </action>
   <action name="actionTextHighlight">

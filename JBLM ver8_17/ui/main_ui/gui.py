@@ -12,10 +12,10 @@ from PyQt6 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(279, 348)
+        MainWindow.resize(325, 348)
         MainWindow.setStyleSheet("QWidget {\n"
 "    font: 11pt \"Helvetica\";\n"
-"    background:#151515;\n"
+"    background:#121212;\n"
 "    color:rgb(255,255,255);\n"
 "}\n"
 "\n"
@@ -986,8 +986,8 @@ class Ui_MainWindow(object):
 "border:none;\n"
 "font-weight:900;\n"
 "padding:4px;\n"
-"min-width:25px;\n"
-"max-width:25px;\n"
+"min-width:35px;\n"
+"max-width:35px;\n"
 "max-height:20px;\n"
 "min-height:20px;\n"
 "text-align:center;\n"
@@ -1102,7 +1102,7 @@ class Ui_MainWindow(object):
         self.sat_date.setObjectName("sat_date")
         self.gridLayout_51.addWidget(self.sat_date, 1, 7, 1, 1)
         self.thurs_journal_nav_btn = QtWidgets.QPushButton(parent=self.week_frame)
-        self.thurs_journal_nav_btn.setMaximumSize(QtCore.QSize(33, 28))
+        self.thurs_journal_nav_btn.setMaximumSize(QtCore.QSize(43, 28))
         self.thurs_journal_nav_btn.setCheckable(True)
         self.thurs_journal_nav_btn.setChecked(False)
         self.thurs_journal_nav_btn.setAutoExclusive(True)
@@ -1180,7 +1180,7 @@ class Ui_MainWindow(object):
         self.thurs_date.setObjectName("thurs_date")
         self.gridLayout_51.addWidget(self.thurs_date, 1, 5, 1, 1)
         self.sat_journal_nav_btn = QtWidgets.QPushButton(parent=self.week_frame)
-        self.sat_journal_nav_btn.setMaximumSize(QtCore.QSize(33, 28))
+        self.sat_journal_nav_btn.setMaximumSize(QtCore.QSize(43, 28))
         self.sat_journal_nav_btn.setAutoFillBackground(False)
         self.sat_journal_nav_btn.setCheckable(True)
         self.sat_journal_nav_btn.setChecked(False)
@@ -1204,7 +1204,7 @@ class Ui_MainWindow(object):
         self.mon_date.setObjectName("mon_date")
         self.gridLayout_51.addWidget(self.mon_date, 1, 2, 1, 1)
         self.mon_journal_nav_btn = QtWidgets.QPushButton(parent=self.week_frame)
-        self.mon_journal_nav_btn.setMaximumSize(QtCore.QSize(33, 28))
+        self.mon_journal_nav_btn.setMaximumSize(QtCore.QSize(43, 28))
         self.mon_journal_nav_btn.setCheckable(True)
         self.mon_journal_nav_btn.setChecked(True)
         self.mon_journal_nav_btn.setAutoExclusive(True)
@@ -1212,7 +1212,7 @@ class Ui_MainWindow(object):
         self.mon_journal_nav_btn.setObjectName("mon_journal_nav_btn")
         self.gridLayout_51.addWidget(self.mon_journal_nav_btn, 0, 2, 1, 1)
         self.tues_journal_nav_btn = QtWidgets.QPushButton(parent=self.week_frame)
-        self.tues_journal_nav_btn.setMaximumSize(QtCore.QSize(33, 28))
+        self.tues_journal_nav_btn.setMaximumSize(QtCore.QSize(43, 28))
         self.tues_journal_nav_btn.setCheckable(True)
         self.tues_journal_nav_btn.setChecked(False)
         self.tues_journal_nav_btn.setAutoExclusive(True)
@@ -1220,7 +1220,7 @@ class Ui_MainWindow(object):
         self.tues_journal_nav_btn.setObjectName("tues_journal_nav_btn")
         self.gridLayout_51.addWidget(self.tues_journal_nav_btn, 0, 3, 1, 1)
         self.wed_journal_nav_btn = QtWidgets.QPushButton(parent=self.week_frame)
-        self.wed_journal_nav_btn.setMaximumSize(QtCore.QSize(33, 28))
+        self.wed_journal_nav_btn.setMaximumSize(QtCore.QSize(43, 28))
         self.wed_journal_nav_btn.setCheckable(True)
         self.wed_journal_nav_btn.setChecked(False)
         self.wed_journal_nav_btn.setAutoExclusive(True)
@@ -1228,7 +1228,7 @@ class Ui_MainWindow(object):
         self.wed_journal_nav_btn.setObjectName("wed_journal_nav_btn")
         self.gridLayout_51.addWidget(self.wed_journal_nav_btn, 0, 4, 1, 1)
         self.fri_journal_nav_btn = QtWidgets.QPushButton(parent=self.week_frame)
-        self.fri_journal_nav_btn.setMaximumSize(QtCore.QSize(33, 28))
+        self.fri_journal_nav_btn.setMaximumSize(QtCore.QSize(43, 28))
         self.fri_journal_nav_btn.setCheckable(True)
         self.fri_journal_nav_btn.setChecked(False)
         self.fri_journal_nav_btn.setAutoExclusive(True)
@@ -1767,53 +1767,53 @@ class Ui_MainWindow(object):
         self.frame_4.setStyleSheet("QFrame {background: transparent;}\n"
 "QPushButton {\n"
 "padding:4px;\n"
-"border-radius:21px;\n"
 "border:2px solid rgb(90,98,200);\n"
 "background:transparent;\n"
-"min-width:30px;\n"
-"max-width:30px;\n"
-"min-height:30px;\n"
-"max-height:30px;\n"
+"\n"
 "}\n"
 "QPushButton:hover {\n"
-"margin-top:1px;border-radius:20px;\n"
-"margin-left:2px;\n"
-"border:2px solid rgb(130,138,240);\n"
+"margin-top:1px;\n"
+"margin-left:1px;\n"
+"border:2px solid rgb(90,98,200);\n"
+"background:rgb(90,98,200);\n"
 "}\n"
 "\n"
 "QPushButton:pressed {\n"
-"    margin-top:2px;border-radius:20px;\n"
-"    margin-left:0px;border:2px solid rgb(127, 135, 182);\n"
+"    margin-top:0px;\n"
+"    margin-left:0px;border:2px solid rgb(90,98,200);\n"
 "}")
         self.frame_4.setObjectName("frame_4")
         self.gridLayout_10 = QtWidgets.QGridLayout(self.frame_4)
-        self.gridLayout_10.setContentsMargins(0, 0, 0, 4)
-        self.gridLayout_10.setHorizontalSpacing(9)
-        self.gridLayout_10.setVerticalSpacing(0)
+        self.gridLayout_10.setContentsMargins(0, 0, 0, 0)
+        self.gridLayout_10.setSpacing(0)
         self.gridLayout_10.setObjectName("gridLayout_10")
         self.eight_ounce_cup = QtWidgets.QPushButton(parent=self.frame_4)
-        self.eight_ounce_cup.setStyleSheet("QPushButton {\n"
+        self.eight_ounce_cup.setStyleSheet("QPushButton {min-width:25px;\n"
+"max-width:25px;\n"
+"min-height:25px;\n"
+"max-height:25px;\n"
+"border-radius:18;\n"
 "image: url(:/newPrefix/waterBottles/8ozWaterBottle.png);\n"
 "}\n"
-"QPushButton:hover {\n"
-"image:url(:/newPrefix/waterBottles/8Ozhover.png);\n"
+"QPushButton:hover {border-radius:17;\n"
+"\n"
+"image: url(:/newPrefix/waterBottles/8ozpress.png);\n"
 "}\n"
-"QPushButton:pressed {\n"
-"image:url(:/newPrefix/waterBottles/8ozWaterPressed.png);\n"
-"}")
+"")
         self.eight_ounce_cup.setText("")
         self.eight_ounce_cup.setObjectName("eight_ounce_cup")
         self.gridLayout_10.addWidget(self.eight_ounce_cup, 0, 1, 1, 1)
         self.thirty_two_ounce_cup = QtWidgets.QPushButton(parent=self.frame_4)
-        self.thirty_two_ounce_cup.setStyleSheet("QPushButton {\n"
+        self.thirty_two_ounce_cup.setStyleSheet("QPushButton {min-width:40px;\n"
+"max-width:40px;\n"
+"min-height:40px;\n"
+"max-height:40px;\n"
+"border-radius:26;\n"
 "    image: url(:/newPrefix/waterBottles/32oz.png);\n"
-"\n"
 "}\n"
 "QPushButton:hover {\n"
-"    image: url(:/newPrefix/waterBottles/32ozhover.png);}\n"
-"\n"
-"QPushButton:pressed {\n"
-"    image: url(:/newPrefix/waterBottles/32ozpresss.png);}")
+"border-radius:25;\n"
+"image: url(:/newPrefix/waterBottles/32ozpress.png);}")
         self.thirty_two_ounce_cup.setText("")
         self.thirty_two_ounce_cup.setObjectName("thirty_two_ounce_cup")
         self.gridLayout_10.addWidget(self.thirty_two_ounce_cup, 0, 7, 1, 1)
@@ -1825,12 +1825,17 @@ class Ui_MainWindow(object):
         self.gridLayout_10.addItem(spacerItem5, 0, 2, 1, 1)
         self.sixteen_ounce_cup = QtWidgets.QPushButton(parent=self.frame_4)
         self.sixteen_ounce_cup.setStyleSheet("QPushButton {\n"
+"min-width:30px;\n"
+"max-width:30px;\n"
+"min-height:30px;\n"
+"max-height:30px;\n"
+"border-radius:21;\n"
 "image: url(:/newPrefix/waterBottles/16ozWaterbottle.png);\n"
 "\n"
 "}\n"
-"QPushButton:hover {image: url(:/newPrefix/waterBottles/16ozHover.png);}\n"
+"QPushButton:hover {image: url(:/newPrefix/waterBottles/16ozpress.png);border-radius:20;}\n"
 "\n"
-"QPushButton:pressed {image: url(:/newPrefix/waterBottles/16ozPressed.png);}")
+"")
         self.sixteen_ounce_cup.setText("")
         self.sixteen_ounce_cup.setObjectName("sixteen_ounce_cup")
         self.gridLayout_10.addWidget(self.sixteen_ounce_cup, 0, 3, 1, 1)
@@ -1838,13 +1843,20 @@ class Ui_MainWindow(object):
         self.gridLayout_10.addItem(spacerItem6, 0, 8, 1, 1)
         self.twenty_four_ounce_cup = QtWidgets.QPushButton(parent=self.frame_4)
         self.twenty_four_ounce_cup.setStyleSheet("QPushButton {\n"
+"min-width:35px;\n"
+"max-width:35px;\n"
+"min-height:35px;\n"
+"max-height:35px;\n"
+"border-radius:23;\n"
 "    image: url(:/newPrefix/waterBottles/24ox.png);\n"
 "\n"
 "}\n"
-"QPushButton:hover {image: url(:/newPrefix/waterBottles/24oxhober.png);}\n"
-"\n"
-"QPushButton:pressed {image: url(:/newPrefix/waterBottles/24oxpress.png);}")
+"QPushButton:hover {\n"
+"image: url(:/newPrefix/waterBottles/24ozPress.png);\n"
+"border-radius:22;}\n"
+"")
         self.twenty_four_ounce_cup.setText("")
+        self.twenty_four_ounce_cup.setIconSize(QtCore.QSize(24, 24))
         self.twenty_four_ounce_cup.setObjectName("twenty_four_ounce_cup")
         self.gridLayout_10.addWidget(self.twenty_four_ounce_cup, 0, 5, 1, 1)
         spacerItem7 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Minimum)
@@ -1927,7 +1939,8 @@ class Ui_MainWindow(object):
 "}        ")
         self.commit_container.setObjectName("commit_container")
         self.gridLayout_56 = QtWidgets.QGridLayout(self.commit_container)
-        self.gridLayout_56.setContentsMargins(0, 0, 0, 0)
+        self.gridLayout_56.setContentsMargins(0, 6, 0, 0)
+        self.gridLayout_56.setSpacing(0)
         self.gridLayout_56.setObjectName("gridLayout_56")
         self.shower_c = QtWidgets.QPushButton(parent=self.commit_container)
         self.shower_c.setStyleSheet("QPushButton {\n"
@@ -1977,10 +1990,16 @@ class Ui_MainWindow(object):
         self.teeth_commit = QtWidgets.QPushButton(parent=self.commit_container)
         self.teeth_commit.setStyleSheet("\n"
 "QPushButton {\n"
+"min-height:40px;\n"
+"max-height:40px;\n"
+"min-width:40px;\n"
+"max-width:40px;\n"
+"border-radius:28;\n"
 "image:url(:/newPrefix/blueteeth.png);\n"
 "}\n"
 "\n"
 "QPushButton:hover {\n"
+"border-radius:27;\n"
 "image:url(:/newPrefix/teethPressed.png);}\n"
 "")
         self.teeth_commit.setText("")
@@ -4212,7 +4231,7 @@ class Ui_MainWindow(object):
         self.gridLayout_20.addWidget(self.mainStack, 0, 0, 1, 1)
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(parent=MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 279, 16))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 325, 16))
         self.menubar.setObjectName("menubar")
         self.menuTracker = QtWidgets.QMenu(parent=self.menubar)
         self.menuTracker.setObjectName("menuTracker")
@@ -4681,19 +4700,19 @@ class Ui_MainWindow(object):
         self.actionPrint.setText(_translate("MainWindow", "Print"))
         self.actionPrint.setShortcut(_translate("MainWindow", "Ctrl+P"))
         self.actionViewJournalSun.setText(_translate("MainWindow", "Sunday"))
-        self.actionViewJournalSun.setShortcut(_translate("MainWindow", "Alt+1"))
+        self.actionViewJournalSun.setShortcut(_translate("MainWindow", "Meta+1"))
         self.actionViewJournalMon.setText(_translate("MainWindow", "Monday"))
-        self.actionViewJournalMon.setShortcut(_translate("MainWindow", "Alt+2"))
+        self.actionViewJournalMon.setShortcut(_translate("MainWindow", "Meta+2"))
         self.actionViewJournalTues.setText(_translate("MainWindow", "Tuesday"))
-        self.actionViewJournalTues.setShortcut(_translate("MainWindow", "Alt+3"))
+        self.actionViewJournalTues.setShortcut(_translate("MainWindow", "Meta+3"))
         self.actionViewJournalWed.setText(_translate("MainWindow", "Wednesday"))
-        self.actionViewJournalWed.setShortcut(_translate("MainWindow", "Alt+4"))
+        self.actionViewJournalWed.setShortcut(_translate("MainWindow", "Meta+4"))
         self.actionViewJournalThurs.setText(_translate("MainWindow", "Thursday"))
-        self.actionViewJournalThurs.setShortcut(_translate("MainWindow", "Alt+5"))
+        self.actionViewJournalThurs.setShortcut(_translate("MainWindow", "Meta+5"))
         self.actionViewJournalFri.setText(_translate("MainWindow", "Friday"))
-        self.actionViewJournalFri.setShortcut(_translate("MainWindow", "Alt+6"))
+        self.actionViewJournalFri.setShortcut(_translate("MainWindow", "Meta+6"))
         self.actionViewJournalSat.setText(_translate("MainWindow", "Saturday"))
-        self.actionViewJournalSat.setShortcut(_translate("MainWindow", "Alt+7"))
+        self.actionViewJournalSat.setShortcut(_translate("MainWindow", "Meta+7"))
         self.actionTextHighlight.setText(_translate("MainWindow", "highlight"))
         self.actionTextHighlight.setShortcut(_translate("MainWindow", "Meta+Shift+H"))
         self.actionTextColor.setText(_translate("MainWindow", "text color"))
