@@ -1038,9 +1038,28 @@ class MainWindow(FramelessWindow, QtWidgets.QMainWindow, Ui_MainWindow):
     def switch_to_agenda_page(self):
         self.switch_page2(
             self.agendaInputPage,
-            640, 480
+            580, 480
         )
     
+    def switch_agenda_size_large(self):
+        self.switch_page2(
+            self.agendaInputPage,
+            720,
+            840
+        )
+    
+    def switch_agenda_size_medium(self):
+        self.switch_page2(
+            self.agendaInputPage,
+            480, 360
+        )
+        
+    def switch_agenda_size_small(self):
+        self.switch_page2(
+            self.agendaInputPage,
+            360, 480
+        )
+        
     def switch_to_agenda_data_page(self):
         self.switch_page2(
             self.agendaJournsDataViewPage,
@@ -1107,7 +1126,10 @@ class MainWindow(FramelessWindow, QtWidgets.QMainWindow, Ui_MainWindow):
     def switch_page_agenda_view_setup(self):
         agenda_switch = {
             self.action_input_view_agenda: self.switch_to_agenda_page,
-            self.action_data_view_agenda: self.switch_to_agenda_data_page
+            self.action_data_view_agenda: self.switch_to_agenda_data_page,
+            self.actionAgendaLarge: self.switch_agenda_size_large,
+            self.actionAgendaMedium: self.switch_agenda_size_medium,
+            self.actionAgendaSmall: self.switch_agenda_size_small
         }
         
         for action, switchpage in agenda_switch.items():

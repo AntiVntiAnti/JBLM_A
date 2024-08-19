@@ -2,6 +2,7 @@ from PyQt6.QtWidgets import QSystemTrayIcon, QMenu, QApplication
 from PyQt6.QtGui import QIcon, QAction
 import sys
 
+
 class SystemTray:
     def __init__(self):
         self.tray = QSystemTrayIcon()
@@ -30,8 +31,10 @@ class SystemTray:
     def set_tooltip(self, tooltip):
         self.tray.setToolTip(tooltip)
 
+
 def wizardz():
     return SystemTray()
+
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)

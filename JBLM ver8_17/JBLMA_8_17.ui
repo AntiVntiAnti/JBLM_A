@@ -7411,6 +7411,9 @@ QDateEdit:focus {color: rgb(172,167,255);}
     <addaction name="menuInjection"/>
     <addaction name="actionSave"/>
     <addaction name="actionPrint"/>
+    <addaction name="actionAgendaSmall"/>
+    <addaction name="actionAgendaMedium"/>
+    <addaction name="actionAgendaLarge"/>
    </widget>
    <addaction name="menuTracker"/>
    <addaction name="menuViews"/>
@@ -7847,6 +7850,30 @@ QDateEdit:focus {color: rgb(172,167,255);}
    </property>
    <property name="shortcut">
     <string>Meta+Shift+W</string>
+   </property>
+  </action>
+  <action name="actionAgendaSmall">
+   <property name="text">
+    <string>Window Size Small</string>
+   </property>
+   <property name="shortcut">
+    <string>Shift+PgDown</string>
+   </property>
+  </action>
+  <action name="actionAgendaMedium">
+   <property name="text">
+    <string>Window Size Medium</string>
+   </property>
+   <property name="shortcut">
+    <string>Meta+Del</string>
+   </property>
+  </action>
+  <action name="actionAgendaLarge">
+   <property name="text">
+    <string>Window Size Large</string>
+   </property>
+   <property name="shortcut">
+    <string>Shift+PgUp</string>
    </property>
   </action>
  </widget>
