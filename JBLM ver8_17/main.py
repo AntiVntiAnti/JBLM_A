@@ -27,7 +27,7 @@ def run_app():
         # window = MainWindow(tray)  # Pass the tray object if needed
         window = MainWindow()
         window.show()
-        window.setFixedSize(640, 640)
+        window.setFixedSize(580, 480)
         sys.exit(app.exec())
     except (ValueError, TypeError) as e:
         logger.error(f"Value or Type error occurred {e}", exc_info=True)

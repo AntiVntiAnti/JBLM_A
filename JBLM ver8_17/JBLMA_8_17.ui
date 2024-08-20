@@ -20,6 +20,46 @@
     color:rgb(255,255,255);
 }
 
+#sleep_tableview,
+#total_hours_slept_tableview,
+#woke_up_like_tableview,
+#sleep_quality_tableview,
+#diet_table,
+#hydration_table,
+#shower_table,
+#teethbrushed_table,
+#yoga_table {
+background-color: transparent;
+selection-background-color: #7e57c2;
+gridline-color:transparent;
+color:#fff;
+}
+#sleep_tableview::item,
+#total_hours_slept_tableview::item,
+#woke_up_like_tableview::item,
+#sleep_quality_tableview::item,
+#diet_table::item,
+#hydration_table::item,
+#shower_table::item,
+#teethbrushed_table::item,
+#yoga_table::item {
+padding: 1px;
+background:rgb(132,127,239);
+}
+#sleep_tableview::item:selected,
+#total_hours_slept_tableview::item:selected,
+#woke_up_like_tableview::item:selected,
+#sleep_quality_tableview::item:selected,
+#diet_table::item:selected,
+#hydration_table::item:selected,
+#shower_table::item:selected,
+#teethbrushed_table::item:selected,
+#yoga_table::item:selected {
+color: #fff;
+background:rgb(23, 23, 23);
+}
+    
+
 /* /////////////////////////////////////////////////////////////////////////////
 QTextEdit
 ///////////////////////////////////////////////////////////////////////////// */
@@ -323,7 +363,7 @@ Lilys Table Views
     alternate-background-color: rgb(100, 157, 220);
     selection-background-color: #7e57c2;
     gridline-color:transparent;
-    color:rgb(110, 74, 113);
+    color:#fff;
 }
 #lily_walk_note_table::item,
 #time_in_room_table::item,
@@ -1824,7 +1864,7 @@ AGENDA SIDEBAR BTNs
             <item row="1" column="1">
              <widget class="QStackedWidget" name="agenda_data_stack">
               <property name="currentIndex">
-               <number>0</number>
+               <number>6</number>
               </property>
               <widget class="QWidget" name="sunday_data">
                <layout class="QGridLayout" name="gridLayout_54">
@@ -5703,24 +5743,6 @@ background-color: #121212;
             </property>
             <item row="0" column="0">
              <widget class="QTableView" name="sleep_tableview">
-              <property name="styleSheet">
-               <string notr="true">
-QTableView {
-background-color: transparent;
-selection-background-color: #7e57c2;
-gridline-color:transparent;
-color:rgb(62,67,144);
-}
-QTableView::item {
-padding: 1px;
-background:rgb(132,127,239);
-}
-QTableView::item:selected {
-color: #fff;
-background:rgb(23, 23, 23);
-}
-    </string>
-              </property>
               <property name="showGrid">
                <bool>false</bool>
               </property>
@@ -5767,24 +5789,6 @@ background:rgb(23, 23, 23);
             </property>
             <item row="0" column="0">
              <widget class="QTableView" name="total_hours_slept_tableview">
-              <property name="styleSheet">
-               <string notr="true">
-QTableView {
-background-color: transparent;
-selection-background-color: #7e57c2;
-gridline-color:transparent;
-color:rgb(62,67,144);
-}
-QTableView::item {
-padding: 1px;
-background:rgb(132,127,239);
-}
-QTableView::item:selected {
-color: #fff;
-background:rgb(23, 23, 23);
-}
-    </string>
-              </property>
               <property name="showGrid">
                <bool>false</bool>
               </property>
@@ -5831,24 +5835,6 @@ background:rgb(23, 23, 23);
             </property>
             <item row="0" column="0">
              <widget class="QTableView" name="woke_up_like_tableview">
-              <property name="styleSheet">
-               <string notr="true">
-QTableView {
-background-color: transparent;
-selection-background-color: #7e57c2;
-gridline-color:transparent;
-color:rgb(62,67,144);
-}
-QTableView::item {
-padding: 1px;
-background:rgb(132,127,239);
-}
-QTableView::item:selected {
-color: #fff;
-background:rgb(23, 23, 23);
-}
-    </string>
-              </property>
               <property name="showGrid">
                <bool>false</bool>
               </property>
@@ -5895,24 +5881,6 @@ background:rgb(23, 23, 23);
             </property>
             <item row="0" column="0">
              <widget class="QTableView" name="sleep_quality_tableview">
-              <property name="styleSheet">
-               <string notr="true">
-QTableView {
-background-color: transparent;
-selection-background-color: #7e57c2;
-gridline-color:transparent;
-color:rgb(62,67,144);
-}
-QTableView::item {
-padding: 1px;
-background:rgb(132,127,239);
-}
-QTableView::item:selected {
-color: #fff;
-background:rgb(23, 23, 23);
-}
-    </string>
-              </property>
               <property name="showGrid">
                <bool>false</bool>
               </property>
@@ -6001,24 +5969,6 @@ QTabBar::tab:only-one {
             </property>
             <item row="0" column="0">
              <widget class="QTableView" name="diet_table">
-              <property name="styleSheet">
-               <string notr="true">
-QTableView {
-background-color: transparent;
-selection-background-color: #7e57c2;
-gridline-color:transparent;
-color:rgb(62,67,144);
-}
-QTableView::item {
-padding: 1px;
-background:rgb(132,127,239);
-}
-QTableView::item:selected {
-color: #fff;
-background:rgb(23, 23, 23);
-}
-    </string>
-              </property>
               <property name="showGrid">
                <bool>false</bool>
               </property>
@@ -6074,24 +6024,6 @@ background:rgb(23, 23, 23);
             </property>
             <item row="0" column="0">
              <widget class="QTableView" name="hydration_table">
-              <property name="styleSheet">
-               <string notr="true">
-QTableView {
-background-color: transparent;
-selection-background-color: #7e57c2;
-gridline-color:transparent;
-color:rgb(62,67,144);
-}
-QTableView::item {
-padding: 1px;
-background:rgb(132,127,239);
-}
-QTableView::item:selected {
-color: #fff;
-background:rgb(23, 23, 23);
-}
-    </string>
-              </property>
               <property name="showGrid">
                <bool>false</bool>
               </property>
@@ -6196,24 +6128,6 @@ QTabBar::tab:only-one {
             </property>
             <item row="0" column="0">
              <widget class="QTableView" name="shower_table">
-              <property name="styleSheet">
-               <string notr="true">
-QTableView {
-background-color: transparent;
-selection-background-color: #7e57c2;
-gridline-color:transparent;
-color:rgb(62,67,144);
-}
-QTableView::item {
-padding: 1px;
-background:rgb(132,127,239);
-}
-QTableView::item:selected {
-color: #fff;
-background:rgb(23, 23, 23);
-}
-    </string>
-              </property>
               <property name="showGrid">
                <bool>false</bool>
               </property>
@@ -6257,24 +6171,6 @@ background:rgb(23, 23, 23);
             </property>
             <item row="0" column="0">
              <widget class="QTableView" name="teethbrushed_table">
-              <property name="styleSheet">
-               <string notr="true">
-QTableView {
-background-color: transparent;
-selection-background-color: #7e57c2;
-gridline-color:transparent;
-color:rgb(62,67,144);
-}
-QTableView::item {
-padding: 1px;
-background:rgb(132,127,239);
-}
-QTableView::item:selected {
-color: #fff;
-background:rgb(23, 23, 23);
-}
-    </string>
-              </property>
               <property name="showGrid">
                <bool>false</bool>
               </property>
@@ -6319,22 +6215,7 @@ background:rgb(23, 23, 23);
             <item row="0" column="0">
              <widget class="QTableView" name="yoga_table">
               <property name="styleSheet">
-               <string notr="true">
-QTableView {
-background-color: transparent;
-selection-background-color: #7e57c2;
-gridline-color:transparent;
-color:rgb(62,67,144);
-}
-QTableView::item {
-padding: 1px;
-background:rgb(132,127,239);
-}
-QTableView::item:selected {
-color: #fff;
-background:rgb(23, 23, 23);
-}
-    </string>
+               <string notr="true"/>
               </property>
               <property name="showGrid">
                <bool>false</bool>
@@ -6904,15 +6785,14 @@ QTabBar::tab:only-one {
         border-radius: 5px;
         padding:4px;
         text-align: left;
-        color: rgb(198,78,78);
+        color: #fff;
     }
     
  QTableView {
      background-color: transparent;
      selection-background-color: #7e57c2;
      gridline-color:transparent;
-     color:rgb(133,13,13);
- }
+     color:#fff; }
  QTableView::item {
      padding: 1px;
      background:rgb(198,78,78);
@@ -6984,7 +6864,7 @@ QTabBar::tab:only-one {
      background-color: transparent;
      selection-background-color: #7e57c2;
      gridline-color:transparent;
-     color:rgb(26,82,123);
+     color:#fff;
  }
  QTableView::item {
      padding: 1px;
@@ -7045,11 +6925,11 @@ QTabBar::tab:only-one {
      background-color: transparent;
      selection-background-color: #7e57c2;
      gridline-color:transparent;
-     color:rgb(184,123,9);
+	color:#fff;
  }
  QTableView::item {
      padding: 1px;
-     background:rgb(249,188,74);
+     background:rgb(240,185,102);
  }
  QTableView::item:selected {
      color: #fff;

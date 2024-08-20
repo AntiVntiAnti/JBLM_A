@@ -19,6 +19,46 @@ class Ui_MainWindow(object):
 "    color:rgb(255,255,255);\n"
 "}\n"
 "\n"
+"#sleep_tableview,\n"
+"#total_hours_slept_tableview,\n"
+"#woke_up_like_tableview,\n"
+"#sleep_quality_tableview,\n"
+"#diet_table,\n"
+"#hydration_table,\n"
+"#shower_table,\n"
+"#teethbrushed_table,\n"
+"#yoga_table {\n"
+"background-color: transparent;\n"
+"selection-background-color: #7e57c2;\n"
+"gridline-color:transparent;\n"
+"color:#fff;\n"
+"}\n"
+"#sleep_tableview::item,\n"
+"#total_hours_slept_tableview::item,\n"
+"#woke_up_like_tableview::item,\n"
+"#sleep_quality_tableview::item,\n"
+"#diet_table::item,\n"
+"#hydration_table::item,\n"
+"#shower_table::item,\n"
+"#teethbrushed_table::item,\n"
+"#yoga_table::item {\n"
+"padding: 1px;\n"
+"background:rgb(132,127,239);\n"
+"}\n"
+"#sleep_tableview::item:selected,\n"
+"#total_hours_slept_tableview::item:selected,\n"
+"#woke_up_like_tableview::item:selected,\n"
+"#sleep_quality_tableview::item:selected,\n"
+"#diet_table::item:selected,\n"
+"#hydration_table::item:selected,\n"
+"#shower_table::item:selected,\n"
+"#teethbrushed_table::item:selected,\n"
+"#yoga_table::item:selected {\n"
+"color: #fff;\n"
+"background:rgb(23, 23, 23);\n"
+"}\n"
+"    \n"
+"\n"
 "/* /////////////////////////////////////////////////////////////////////////////\n"
 "QTextEdit\n"
 "///////////////////////////////////////////////////////////////////////////// */\n"
@@ -322,7 +362,7 @@ class Ui_MainWindow(object):
 "    alternate-background-color: rgb(100, 157, 220);\n"
 "    selection-background-color: #7e57c2;\n"
 "    gridline-color:transparent;\n"
-"    color:rgb(110, 74, 113);\n"
+"    color:#fff;\n"
 "}\n"
 "#lily_walk_note_table::item,\n"
 "#time_in_room_table::item,\n"
@@ -3405,22 +3445,6 @@ class Ui_MainWindow(object):
         self.gridLayout_14.setSpacing(0)
         self.gridLayout_14.setObjectName("gridLayout_14")
         self.sleep_tableview = QtWidgets.QTableView(parent=self.tab_4)
-        self.sleep_tableview.setStyleSheet("\n"
-"QTableView {\n"
-"background-color: transparent;\n"
-"selection-background-color: #7e57c2;\n"
-"gridline-color:transparent;\n"
-"color:rgb(62,67,144);\n"
-"}\n"
-"QTableView::item {\n"
-"padding: 1px;\n"
-"background:rgb(132,127,239);\n"
-"}\n"
-"QTableView::item:selected {\n"
-"color: #fff;\n"
-"background:rgb(23, 23, 23);\n"
-"}\n"
-"    ")
         self.sleep_tableview.setShowGrid(False)
         self.sleep_tableview.setSortingEnabled(True)
         self.sleep_tableview.setObjectName("sleep_tableview")
@@ -3438,22 +3462,6 @@ class Ui_MainWindow(object):
         self.gridLayout_15.setSpacing(0)
         self.gridLayout_15.setObjectName("gridLayout_15")
         self.total_hours_slept_tableview = QtWidgets.QTableView(parent=self.tab_5)
-        self.total_hours_slept_tableview.setStyleSheet("\n"
-"QTableView {\n"
-"background-color: transparent;\n"
-"selection-background-color: #7e57c2;\n"
-"gridline-color:transparent;\n"
-"color:rgb(62,67,144);\n"
-"}\n"
-"QTableView::item {\n"
-"padding: 1px;\n"
-"background:rgb(132,127,239);\n"
-"}\n"
-"QTableView::item:selected {\n"
-"color: #fff;\n"
-"background:rgb(23, 23, 23);\n"
-"}\n"
-"    ")
         self.total_hours_slept_tableview.setShowGrid(False)
         self.total_hours_slept_tableview.setSortingEnabled(True)
         self.total_hours_slept_tableview.setObjectName("total_hours_slept_tableview")
@@ -3471,22 +3479,6 @@ class Ui_MainWindow(object):
         self.gridLayout_16.setSpacing(0)
         self.gridLayout_16.setObjectName("gridLayout_16")
         self.woke_up_like_tableview = QtWidgets.QTableView(parent=self.tab_6)
-        self.woke_up_like_tableview.setStyleSheet("\n"
-"QTableView {\n"
-"background-color: transparent;\n"
-"selection-background-color: #7e57c2;\n"
-"gridline-color:transparent;\n"
-"color:rgb(62,67,144);\n"
-"}\n"
-"QTableView::item {\n"
-"padding: 1px;\n"
-"background:rgb(132,127,239);\n"
-"}\n"
-"QTableView::item:selected {\n"
-"color: #fff;\n"
-"background:rgb(23, 23, 23);\n"
-"}\n"
-"    ")
         self.woke_up_like_tableview.setShowGrid(False)
         self.woke_up_like_tableview.setSortingEnabled(True)
         self.woke_up_like_tableview.setObjectName("woke_up_like_tableview")
@@ -3504,22 +3496,6 @@ class Ui_MainWindow(object):
         self.gridLayout_17.setSpacing(0)
         self.gridLayout_17.setObjectName("gridLayout_17")
         self.sleep_quality_tableview = QtWidgets.QTableView(parent=self.tab_7)
-        self.sleep_quality_tableview.setStyleSheet("\n"
-"QTableView {\n"
-"background-color: transparent;\n"
-"selection-background-color: #7e57c2;\n"
-"gridline-color:transparent;\n"
-"color:rgb(62,67,144);\n"
-"}\n"
-"QTableView::item {\n"
-"padding: 1px;\n"
-"background:rgb(132,127,239);\n"
-"}\n"
-"QTableView::item:selected {\n"
-"color: #fff;\n"
-"background:rgb(23, 23, 23);\n"
-"}\n"
-"    ")
         self.sleep_quality_tableview.setShowGrid(False)
         self.sleep_quality_tableview.setSortingEnabled(True)
         self.sleep_quality_tableview.setObjectName("sleep_quality_tableview")
@@ -3572,22 +3548,6 @@ class Ui_MainWindow(object):
         self.gridLayout_13.setSpacing(0)
         self.gridLayout_13.setObjectName("gridLayout_13")
         self.diet_table = QtWidgets.QTableView(parent=self.tab_8)
-        self.diet_table.setStyleSheet("\n"
-"QTableView {\n"
-"background-color: transparent;\n"
-"selection-background-color: #7e57c2;\n"
-"gridline-color:transparent;\n"
-"color:rgb(62,67,144);\n"
-"}\n"
-"QTableView::item {\n"
-"padding: 1px;\n"
-"background:rgb(132,127,239);\n"
-"}\n"
-"QTableView::item:selected {\n"
-"color: #fff;\n"
-"background:rgb(23, 23, 23);\n"
-"}\n"
-"    ")
         self.diet_table.setShowGrid(False)
         self.diet_table.setSortingEnabled(True)
         self.diet_table.setObjectName("diet_table")
@@ -3609,22 +3569,6 @@ class Ui_MainWindow(object):
         self.gridLayout_18.setSpacing(0)
         self.gridLayout_18.setObjectName("gridLayout_18")
         self.hydration_table = QtWidgets.QTableView(parent=self.tab_9)
-        self.hydration_table.setStyleSheet("\n"
-"QTableView {\n"
-"background-color: transparent;\n"
-"selection-background-color: #7e57c2;\n"
-"gridline-color:transparent;\n"
-"color:rgb(62,67,144);\n"
-"}\n"
-"QTableView::item {\n"
-"padding: 1px;\n"
-"background:rgb(132,127,239);\n"
-"}\n"
-"QTableView::item:selected {\n"
-"color: #fff;\n"
-"background:rgb(23, 23, 23);\n"
-"}\n"
-"    ")
         self.hydration_table.setShowGrid(False)
         self.hydration_table.setSortingEnabled(True)
         self.hydration_table.setObjectName("hydration_table")
@@ -3683,22 +3627,6 @@ class Ui_MainWindow(object):
         self.gridLayout_7.setSpacing(0)
         self.gridLayout_7.setObjectName("gridLayout_7")
         self.shower_table = QtWidgets.QTableView(parent=self.tab)
-        self.shower_table.setStyleSheet("\n"
-"QTableView {\n"
-"background-color: transparent;\n"
-"selection-background-color: #7e57c2;\n"
-"gridline-color:transparent;\n"
-"color:rgb(62,67,144);\n"
-"}\n"
-"QTableView::item {\n"
-"padding: 1px;\n"
-"background:rgb(132,127,239);\n"
-"}\n"
-"QTableView::item:selected {\n"
-"color: #fff;\n"
-"background:rgb(23, 23, 23);\n"
-"}\n"
-"    ")
         self.shower_table.setShowGrid(False)
         self.shower_table.setSortingEnabled(True)
         self.shower_table.setObjectName("shower_table")
@@ -3716,22 +3644,6 @@ class Ui_MainWindow(object):
         self.gridLayout_6.setSpacing(0)
         self.gridLayout_6.setObjectName("gridLayout_6")
         self.teethbrushed_table = QtWidgets.QTableView(parent=self.tab_3)
-        self.teethbrushed_table.setStyleSheet("\n"
-"QTableView {\n"
-"background-color: transparent;\n"
-"selection-background-color: #7e57c2;\n"
-"gridline-color:transparent;\n"
-"color:rgb(62,67,144);\n"
-"}\n"
-"QTableView::item {\n"
-"padding: 1px;\n"
-"background:rgb(132,127,239);\n"
-"}\n"
-"QTableView::item:selected {\n"
-"color: #fff;\n"
-"background:rgb(23, 23, 23);\n"
-"}\n"
-"    ")
         self.teethbrushed_table.setShowGrid(False)
         self.teethbrushed_table.setSortingEnabled(True)
         self.teethbrushed_table.setObjectName("teethbrushed_table")
@@ -3749,22 +3661,7 @@ class Ui_MainWindow(object):
         self.gridLayout_8.setSpacing(0)
         self.gridLayout_8.setObjectName("gridLayout_8")
         self.yoga_table = QtWidgets.QTableView(parent=self.tab_2)
-        self.yoga_table.setStyleSheet("\n"
-"QTableView {\n"
-"background-color: transparent;\n"
-"selection-background-color: #7e57c2;\n"
-"gridline-color:transparent;\n"
-"color:rgb(62,67,144);\n"
-"}\n"
-"QTableView::item {\n"
-"padding: 1px;\n"
-"background:rgb(132,127,239);\n"
-"}\n"
-"QTableView::item:selected {\n"
-"color: #fff;\n"
-"background:rgb(23, 23, 23);\n"
-"}\n"
-"    ")
+        self.yoga_table.setStyleSheet("")
         self.yoga_table.setShowGrid(False)
         self.yoga_table.setSortingEnabled(True)
         self.yoga_table.setObjectName("yoga_table")
@@ -4026,15 +3923,14 @@ class Ui_MainWindow(object):
 "        border-radius: 5px;\n"
 "        padding:4px;\n"
 "        text-align: left;\n"
-"        color: rgb(198,78,78);\n"
+"        color: #fff;\n"
 "    }\n"
 "    \n"
 " QTableView {\n"
 "     background-color: transparent;\n"
 "     selection-background-color: #7e57c2;\n"
 "     gridline-color:transparent;\n"
-"     color:rgb(133,13,13);\n"
-" }\n"
+"     color:#fff; }\n"
 " QTableView::item {\n"
 "     padding: 1px;\n"
 "     background:rgb(198,78,78);\n"
@@ -4075,7 +3971,7 @@ class Ui_MainWindow(object):
 "     background-color: transparent;\n"
 "     selection-background-color: #7e57c2;\n"
 "     gridline-color:transparent;\n"
-"     color:rgb(26,82,123);\n"
+"     color:#fff;\n"
 " }\n"
 " QTableView::item {\n"
 "     padding: 1px;\n"
@@ -4105,11 +4001,11 @@ class Ui_MainWindow(object):
 "     background-color: transparent;\n"
 "     selection-background-color: #7e57c2;\n"
 "     gridline-color:transparent;\n"
-"     color:rgb(184,123,9);\n"
+"    color:#fff;\n"
 " }\n"
 " QTableView::item {\n"
 "     padding: 1px;\n"
-"     background:rgb(249,188,74);\n"
+"     background:rgb(240,185,102);\n"
 " }\n"
 " QTableView::item:selected {\n"
 "     color: #fff;\n"
@@ -4446,7 +4342,7 @@ class Ui_MainWindow(object):
         self.mainStack.setCurrentIndex(0)
         self.agendaStack.setCurrentIndex(0)
         self.agenda_journal_stack.setCurrentIndex(0)
-        self.agenda_data_stack.setCurrentIndex(0)
+        self.agenda_data_stack.setCurrentIndex(6)
         self.tabWidget_3.setCurrentIndex(0)
         self.tabWidget.setCurrentIndex(0)
         self.tabWidget_2.setCurrentIndex(0)
