@@ -1025,29 +1025,41 @@ class MainWindow(FramelessWindow, QtWidgets.QMainWindow, Ui_MainWindow):
                      page_widget,
                      width,
                      height):
-        self.agendaStack.setCurrentWidget(page_widget)
-        self.setFixedSize(width, height)
-    
+        try:
+            self.agendaStack.setCurrentWidget(page_widget)
+            self.setFixedSize(width, height)
+        except Exception as e:
+            logger.error(f"{e}", exc_info=True)
+
     def switch_page(self,
                     page_widget,
                     width,
                     height):
-        self.mainStack.setCurrentWidget(page_widget)
-        self.setFixedSize(width, height)
-    
+        try:
+            self.mainStack.setCurrentWidget(page_widget)
+            self.setFixedSize(width, height)
+        except Exception as e:
+            logger.error(f"{e}", exc_info=True)
+            
     def switch_to_agenda_page(self):
-        self.switch_page2(
-            self.agendaInputPage,
-            580, 480
-        )
-    
+        try:
+            self.switch_page2(
+                self.agendaInputPage,
+                580, 480
+            )
+        except Exception as e:
+            logger.error(f"{e}", exc_info=True)
+            
     def switch_agenda_size_large(self):
-        self.switch_page2(
-            self.agendaInputPage,
-            720,
-            840
-        )
-    
+        try:
+            self.switch_page2(
+                self.agendaInputPage,
+                720,
+                840
+            )
+        except Exception as e:
+            logger.error(f"{e}", exc_info=True)
+            
     def switch_agenda_size_medium(self):
         self.switch_page2(
             self.agendaInputPage,
@@ -1124,16 +1136,21 @@ class MainWindow(FramelessWindow, QtWidgets.QMainWindow, Ui_MainWindow):
         )
     
     def switch_page_agenda_view_setup(self):
-        agenda_switch = {
-            self.action_input_view_agenda: self.switch_to_agenda_page,
-            self.action_data_view_agenda: self.switch_to_agenda_data_page,
-            self.actionAgendaLarge: self.switch_agenda_size_large,
-            self.actionAgendaMedium: self.switch_agenda_size_medium,
-            self.actionAgendaSmall: self.switch_agenda_size_small
-        }
-        
-        for action, switchpage in agenda_switch.items():
-            action.triggered.connect(switchpage)
+        try:
+            agenda_switch = {
+                self.action_input_view_agenda: self.switch_to_agenda_page,
+                self.action_data_view_agenda: self.switch_to_agenda_data_page,
+                self.actionAgendaLarge: self.switch_agenda_size_large,
+                self.actionAgendaMedium: self.switch_agenda_size_medium,
+                self.actionAgendaSmall: self.switch_agenda_size_small
+                # todo need to affix these to only transform the Agenda page.
+            }
+            
+            for action, switchpage in agenda_switch.items():
+                action.triggered.connect(switchpage)
+                # TODO better exceptions
+        except Exception as e:
+            logger.error(f"{e}", exc_info=True)
     
     def switch_page_view_setup(self):
         try:
