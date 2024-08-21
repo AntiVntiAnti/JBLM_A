@@ -10,7 +10,7 @@ class SettingsManagerLilysWidgets:
     """
     
     def __init__(self):
-        self.settings = QSettings(tkc.ORGANIZATION_NAME, tkc.APPLICATION_NAME)
+        self.settings = QSettings(tkc.ORGANIZATION_NAME, tkc.LILY_APP)
     
     def save_lilys_widget_states(
         self,

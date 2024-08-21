@@ -1020,7 +1020,7 @@ class MainWindow(FramelessWindow, QtWidgets.QMainWindow, Ui_MainWindow):
     # ####################################################################################
     # SWITCH PAGE METHODS
     # ####################################################################################
-    
+    # SWITCH PAGE 2
     def switch_page2(self,
                      page_widget,
                      width,
@@ -1030,7 +1030,49 @@ class MainWindow(FramelessWindow, QtWidgets.QMainWindow, Ui_MainWindow):
             self.setFixedSize(width, height)
         except Exception as e:
             logger.error(f"{e}", exc_info=True)
+    
+    def switch_to_agenda_page(self):
+        try:
+            self.switch_page2(
+                self.agendaInputPage,
+                width=580,
+                height=480
+            )
+        except Exception as e:
+            logger.error(f"{e}", exc_info=True)
+    
+    def switch_agenda_size_large(self):
+        try:
+            self.switch_page2(
+                self.agendaInputPage,
+                width=720,
+                height=840
+            )
+        except Exception as e:
+            logger.error(f"{e}", exc_info=True)
+    
+    def switch_agenda_size_medium(self):
+        self.switch_page2(
+            self.agendaInputPage,
+            width=480,
+            height=360
+        )
+    
+    def switch_agenda_size_small(self):
+        self.switch_page2(
+            self.agendaInputPage,
+            width=360,
+            height=480
+        )
+    
+    def switch_to_agenda_data_page(self):
+        self.switch_page2(
+            self.agendaJournsDataViewPage,
+            width=400,
+            height=600
+        )
 
+    # SWITCH PAGE basic
     def switch_page(self,
                     page_widget,
                     width,
@@ -1040,44 +1082,6 @@ class MainWindow(FramelessWindow, QtWidgets.QMainWindow, Ui_MainWindow):
             self.setFixedSize(width, height)
         except Exception as e:
             logger.error(f"{e}", exc_info=True)
-            
-    def switch_to_agenda_page(self):
-        try:
-            self.switch_page2(
-                self.agendaInputPage,
-                580, 480
-            )
-        except Exception as e:
-            logger.error(f"{e}", exc_info=True)
-            
-    def switch_agenda_size_large(self):
-        try:
-            self.switch_page2(
-                self.agendaInputPage,
-                720,
-                840
-            )
-        except Exception as e:
-            logger.error(f"{e}", exc_info=True)
-            
-    def switch_agenda_size_medium(self):
-        self.switch_page2(
-            self.agendaInputPage,
-            480, 360
-        )
-        
-    def switch_agenda_size_small(self):
-        self.switch_page2(
-            self.agendaInputPage,
-            360, 480
-        )
-        
-    def switch_to_agenda_data_page(self):
-        self.switch_page2(
-            self.agendaJournsDataViewPage,
-            400,
-            600
-        )
     
     def switch_bds_page(self):
         self.switch_page(

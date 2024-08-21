@@ -24,11 +24,8 @@ STYLESHEET = """
 #fri_date {font-weight:bold; font-size:10pt; color:rgb(127, 154, 214);}
 #sat_date {font-weight:bold; font-size:10pt; color:rgb(115, 165, 204);}
 """
-LILY_APP = 'lilyLoves'
-MINDER_APP = 'minderMinder'
-BASICS_APP = 'basicsModuleSolo'
-DIET_MODULE = 'dietModule'
-AGENDA_NAME = 'agendaModule'
+LILY_APP = 'JBLM_LILY_MODULE'
+AGENDA_NAME = 'JBLM_AGENDA_MODULE'
 
 COURSEWORK = """
 <!DOCTYPE html>
