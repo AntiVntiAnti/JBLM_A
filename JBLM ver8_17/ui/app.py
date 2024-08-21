@@ -138,7 +138,7 @@ class TableInputDialog(QDialog):
     This dialog allows the user to input the amount rows and columns for a table.
 
     Attributes:
-        rows_input (QLineEdit): Input field for the number of rows.
+        rows_input (QLineEdit): Input field for the amount rows.
         columns_input (QLineEdit): Input field for the amount columns.
         ok_button (QPushButton): OK button for accepting the input.
         cancel_button (QPushButton): Cancel button for rejecting the input.
@@ -168,7 +168,7 @@ class TableInputDialog(QDialog):
         Get the dimensions entered by the user.
 
         Returns:
-            tuple: A tuple containing the number of rows and columns entered by the user.
+            tuple: A tuple containing the amount rows and columns entered by the user.
         """
         return self.rows_input.text(), self.columns_input.text()
 
@@ -662,7 +662,7 @@ class MainWindow(FramelessWindow, QtWidgets.QMainWindow, Ui_MainWindow):
         Injects the current time into the focused QTextEdit widget.
 
         This method retrieves the currently focused widget and checks if it is an instance of QTextEdit.
-        If it is, the current time is obtained and inserted into the QTextEdit widget using HTML formatting.
+        If it is, the current time is get and inserted into the QTextEdit widget using HTML formatting.
 
         Raises:
             Exception: If an error occurs during the injection process.

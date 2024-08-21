@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>498</width>
+    <height>359</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -53,13 +53,13 @@ QSlider::handle:horizontal:pressed {
 QSlider
 ///////////////////////////////////////////////////////////////////////////// */
 QSlider:vertical {
-min-width:75px;
+min-width:35px;
 min-height:250px;
 max-height:250px;
 }
 QSlider::groove:vertical {
-border-radius: 7px;
-width: 75px;
+border-radius: 17px;
+width: 35px;
 margin: 0px;
 background:rgb(22, 24, 29);
 }
@@ -73,7 +73,7 @@ background: rgb(233,123,111);
 height: 35px;
 width: 75px;
 margin: 0px;
-border-radius:4px;
+border-radius:17px;
 }
 
 QSlider::add-page:vertical {
@@ -167,365 +167,531 @@ QScrollBar::sub-page:vertical {
     background: transparent;
 }</string>
   </property>
-  <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="label_15">
-    <property name="geometry">
-     <rect>
-      <x>375</x>
-      <y>75</y>
-      <width>62</width>
-      <height>12</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">
-    /* ///////////////////////////////////////////////////////////////
-    QSpinBox
-    /////////////////////////////////////////////////////////////// */
-    QLabel {color:rgb(233,196,106);}
-    QLabel:hover {color: rgb(255,255,166);}
-    QLabel:focus {color: rgb(255,226,136);}
-    </string>
-    </property>
-    <property name="text">
-     <string>kim jong un</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_16">
-    <property name="geometry">
-     <rect>
-      <x>450</x>
-      <y>75</y>
-      <width>57</width>
-      <height>12</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">
-    /* ///////////////////////////////////////////////////////////////
-    QSpinBox
-    /////////////////////////////////////////////////////////////// */
-    QLabel {color:rgb(244,162,97);}
-    QLabel:hover {color: rgb(255,222,157);}
-    QLabel:focus {color: rgb(255,192,127);}
-    </string>
-    </property>
-    <property name="text">
-     <string>jim jim jom</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_27">
-    <property name="geometry">
-     <rect>
-      <x>550</x>
-      <y>75</y>
-      <width>54</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">
-    /* ///////////////////////////////////////////////////////////////
-    QSpinBox
-    /////////////////////////////////////////////////////////////// */
-    QLabel {color:rgb(231,111,81);}
-    QLabel:hover {color: rgb(255,171,141);}
-    QLabel:focus {color: rgb(255,141,111);}
-    </string>
-    </property>
-    <property name="text">
-     <string>tom brady</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_2">
-    <property name="geometry">
-     <rect>
-      <x>625</x>
-      <y>75</y>
-      <width>43</width>
-      <height>12</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">
-    /* ///////////////////////////////////////////////////////////////
-    QSpinBox
-    /////////////////////////////////////////////////////////////// */
-    QLabel {color:rgb(244,56,81);}
-    QLabel:hover {color: rgb(255,116,141);}
-    QLabel:focus {color: rgb(255,86,111);}
-    </string>
-    </property>
-    <property name="text">
-     <string>puteeny</string>
-    </property>
-    <property name="wordWrap">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QFrame" name="">
-    <property name="geometry">
-     <rect>
-      <x>25</x>
-      <y>0</y>
-      <width>348</width>
-      <height>532</height>
-     </rect>
-    </property>
-    <layout class="QGridLayout" name="gridLayout">
-     <property name="leftMargin">
-      <number>12</number>
-     </property>
-     <property name="topMargin">
-      <number>12</number>
-     </property>
-     <property name="rightMargin">
-      <number>12</number>
-     </property>
-     <property name="bottomMargin">
-      <number>12</number>
-     </property>
-     <property name="spacing">
-      <number>8</number>
-     </property>
-     <item row="0" column="3">
-      <widget class="QSlider" name="altmans_summary">
-       <property name="styleSheet">
-        <string notr="true">
+  <widget class="QWidget" name="centralBeck">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <widget class="QStackedWidget" name="beckStack">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="beckInputPage">
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="2" column="0">
+         <widget class="QFrame" name="beckSliderContainer">
+          <layout class="QGridLayout" name="gridLayout">
+           <property name="leftMargin">
+            <number>12</number>
+           </property>
+           <property name="topMargin">
+            <number>12</number>
+           </property>
+           <property name="rightMargin">
+            <number>12</number>
+           </property>
+           <property name="bottomMargin">
+            <number>12</number>
+           </property>
+           <property name="spacing">
+            <number>8</number>
+           </property>
+           <item row="0" column="2">
+            <widget class="QSlider" name="newBeck_2">
+             <property name="styleSheet">
+              <string notr="true">
 
 /* ///////////////////////////////////////////////////////////////
 QSlider Colors
 /////////////////////////////////////////////////////////////// */
 
-QSlider::handle:vertical {background:rgb(244,56,81);}
-QSlider::handle:vertical:hover {background:rgb(255,96,121);}
-QSlider::handle:vertical:pressed {background:rgb(194,6,31);}
-QSlider::groove:vertical:hover {background:rgba(244,56,81,0.25);}
-QSlider::groove:vertical {background:rgba(244,56,81,0.15);}
+QSlider::handle:vertical {background:rgb(252,74,118);}
+QSlider::handle:vertical:hover {background:rgb(255,114,158);}
+QSlider::handle:vertical:pressed {background:rgb(202,24,68);}
+QSlider::groove:vertical:hover {background:rgba(252,74,118,0.25);}
+QSlider::groove:vertical {background:rgba(252,74,118,0.15);}
 
         </string>
-       </property>
-       <property name="maximum">
-        <number>20</number>
-       </property>
-       <property name="orientation">
-        <enum>Qt::Vertical</enum>
-       </property>
-       <property name="invertedAppearance">
-        <bool>false</bool>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="1">
-      <widget class="QSlider" name="altman_question_4">
-       <property name="styleSheet">
-        <string notr="true">
+             </property>
+             <property name="maximum">
+              <number>3</number>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="invertedAppearance">
+              <bool>false</bool>
+             </property>
+             <property name="invertedControls">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="9">
+            <widget class="QSlider" name="newBeck_9">
+             <property name="styleSheet">
+              <string notr="true">
 
 /* ///////////////////////////////////////////////////////////////
 QSlider Colors
 /////////////////////////////////////////////////////////////// */
 
-QSlider::handle:vertical {background:rgb(244,162,97);}
-QSlider::handle:vertical:hover {background:rgb(255,202,137);}
-QSlider::handle:vertical:pressed {background:rgb(194,112,47);}
-QSlider::groove:vertical:hover {background:rgba(244,162,97,0.25);}
-QSlider::groove:vertical {background:rgba(244,162,97,0.15);}
+QSlider::handle:vertical {background:rgb(87,180,254);}
+QSlider::handle:vertical:hover {background:rgb(127,220,255);}
+QSlider::handle:vertical:pressed {background:rgb(37,130,204);}
+QSlider::groove:vertical:hover {background:rgba(87,180,254,0.25);}
+QSlider::groove:vertical {background:rgba(87,180,254,0.15);}
 
         </string>
-       </property>
-       <property name="maximum">
-        <number>4</number>
-       </property>
-       <property name="orientation">
-        <enum>Qt::Vertical</enum>
-       </property>
-       <property name="invertedAppearance">
-        <bool>false</bool>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="2">
-      <widget class="QSlider" name="altman_question_5">
-       <property name="styleSheet">
-        <string notr="true">
+             </property>
+             <property name="maximum">
+              <number>3</number>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="invertedAppearance">
+              <bool>false</bool>
+             </property>
+             <property name="invertedControls">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="5">
+            <widget class="QSlider" name="newBeck_5">
+             <property name="styleSheet">
+              <string notr="true">
 
 /* ///////////////////////////////////////////////////////////////
 QSlider Colors
 /////////////////////////////////////////////////////////////// */
 
-QSlider::handle:vertical {background:rgb(231,111,81);}
-QSlider::handle:vertical:hover {background:rgb(255,151,121);}
-QSlider::handle:vertical:pressed {background:rgb(181,61,31);}
-QSlider::groove:vertical:hover {background:rgba(231,111,81,0.25);}
-QSlider::groove:vertical {background:rgba(231,111,81,0.15);}
+QSlider::handle:vertical {background:rgb(215,119,222);}
+QSlider::handle:vertical:hover {background:rgb(255,159,255);}
+QSlider::handle:vertical:pressed {background:rgb(165,69,172);}
+QSlider::groove:vertical:hover {background:rgba(215,119,222,0.25);}
+QSlider::groove:vertical {background:rgba(215,119,222,0.15);}
 
         </string>
-       </property>
-       <property name="maximum">
-        <number>4</number>
-       </property>
-       <property name="orientation">
-        <enum>Qt::Vertical</enum>
-       </property>
-       <property name="invertedAppearance">
-        <bool>false</bool>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="0">
-      <widget class="QSlider" name="altman_question_3">
-       <property name="styleSheet">
-        <string notr="true">
+             </property>
+             <property name="maximum">
+              <number>3</number>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="invertedAppearance">
+              <bool>false</bool>
+             </property>
+             <property name="invertedControls">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <spacer name="hs_2">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="0" column="1">
+            <widget class="QSlider" name="newBeck">
+             <property name="toolTip">
+              <string>&lt;ol&gt;
+&lt;li&gt;I don't feel sad or hopeless.&lt;/li&gt;
+&lt;li&gt;I feel sad or discouraged about the future.&lt;/li&gt;
+&lt;li&gt;I often feel sad and believe the future holds no improvement.&lt;/li&gt;
+&lt;li&gt;I am constantly sad and hopeless, feeling that nothing will ever get better.&lt;/li&gt;
+&lt;/ol&gt;</string>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">
 
 /* ///////////////////////////////////////////////////////////////
 QSlider Colors
 /////////////////////////////////////////////////////////////// */
 
-QSlider::handle:vertical {background:rgb(233,196,106);}
-QSlider::handle:vertical:hover {background:rgb(255,236,146);}
-QSlider::handle:vertical:pressed {background:rgb(183,146,56);}
-QSlider::groove:vertical:hover {background:rgba(233,196,106,0.25);}
-QSlider::groove:vertical {background:rgba(233,196,106,0.15);}
+QSlider::handle:vertical {background:rgb(245,77,77);}
+QSlider::handle:vertical:hover {background:rgb(255,117,117);}
+QSlider::handle:vertical:pressed {background:rgb(195,27,27);}
+QSlider::groove:vertical:hover {background:rgba(245,77,77,0.25);}
+QSlider::groove:vertical {background:rgba(245,77,77,0.15);}
 
         </string>
-       </property>
-       <property name="maximum">
-        <number>4</number>
-       </property>
-       <property name="orientation">
-        <enum>Qt::Vertical</enum>
-       </property>
-       <property name="invertedAppearance">
-        <bool>false</bool>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="3">
-      <widget class="QSlider" name="altman_question_9">
-       <property name="styleSheet">
-        <string notr="true">
+             </property>
+             <property name="maximum">
+              <number>3</number>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="invertedAppearance">
+              <bool>false</bool>
+             </property>
+             <property name="invertedControls">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="10">
+            <widget class="QSlider" name="newBeck_10">
+             <property name="styleSheet">
+              <string notr="true">
 
 /* ///////////////////////////////////////////////////////////////
 QSlider Colors
 /////////////////////////////////////////////////////////////// */
 
-QSlider::handle:vertical {background:rgb(233,196,106);}
-QSlider::handle:vertical:hover {background:rgb(255,236,146);}
-QSlider::handle:vertical:pressed {background:rgb(183,146,56);}
-QSlider::groove:vertical:hover {background:rgba(233,196,106,0.25);}
-QSlider::groove:vertical {background:rgba(233,196,106,0.15);}
+QSlider::handle:vertical {background:rgb(63,189,243);}
+QSlider::handle:vertical:hover {background:rgb(103,229,255);}
+QSlider::handle:vertical:pressed {background:rgb(13,139,193);}
+QSlider::groove:vertical:hover {background:rgba(63,189,243,0.25);}
+QSlider::groove:vertical {background:rgba(63,189,243,0.15);}
 
         </string>
-       </property>
-       <property name="maximum">
-        <number>4</number>
-       </property>
-       <property name="orientation">
-        <enum>Qt::Vertical</enum>
-       </property>
-       <property name="invertedAppearance">
-        <bool>true</bool>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="0">
-      <widget class="QSlider" name="altmans_summary_3">
-       <property name="styleSheet">
-        <string notr="true">
+             </property>
+             <property name="maximum">
+              <number>3</number>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="invertedAppearance">
+              <bool>false</bool>
+             </property>
+             <property name="invertedControls">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="3">
+            <widget class="QSlider" name="newBeck_3">
+             <property name="styleSheet">
+              <string notr="true">
 
 /* ///////////////////////////////////////////////////////////////
 QSlider Colors
 /////////////////////////////////////////////////////////////// */
 
-QSlider::handle:vertical {background:rgb(244,56,81);}
-QSlider::handle:vertical:hover {background:rgb(255,96,121);}
-QSlider::handle:vertical:pressed {background:rgb(194,6,31);}
-QSlider::groove:vertical:hover {background:rgba(244,56,81,0.25);}
-QSlider::groove:vertical {background:rgba(244,56,81,0.15);}
+QSlider::handle:vertical {background:rgb(249,83,157);}
+QSlider::handle:vertical:hover {background:rgb(255,123,197);}
+QSlider::handle:vertical:pressed {background:rgb(199,33,107);}
+QSlider::groove:vertical:hover {background:rgba(249,83,157,0.25);}
+QSlider::groove:vertical {background:rgba(249,83,157,0.15);}
 
         </string>
-       </property>
-       <property name="maximum">
-        <number>20</number>
-       </property>
-       <property name="orientation">
-        <enum>Qt::Vertical</enum>
-       </property>
-       <property name="invertedAppearance">
-        <bool>true</bool>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="2">
-      <widget class="QSlider" name="altman_question_10">
-       <property name="styleSheet">
-        <string notr="true">
+             </property>
+             <property name="maximum">
+              <number>3</number>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="invertedAppearance">
+              <bool>false</bool>
+             </property>
+             <property name="invertedControls">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="4">
+            <widget class="QSlider" name="newBeck_4">
+             <property name="styleSheet">
+              <string notr="true">
 
 /* ///////////////////////////////////////////////////////////////
 QSlider Colors
 /////////////////////////////////////////////////////////////// */
 
-QSlider::handle:vertical {background:rgb(244,162,97);}
-QSlider::handle:vertical:hover {background:rgb(255,202,137);}
-QSlider::handle:vertical:pressed {background:rgb(194,112,47);}
-QSlider::groove:vertical:hover {background:rgba(244,162,97,0.25);}
-QSlider::groove:vertical {background:rgba(244,162,97,0.15);}
-
+QSlider::handle:vertical {background:rgb(237,100,192);}
+QSlider::handle:vertical:hover {background:rgb(255,140,232);}
+QSlider::handle:vertical:pressed {background:rgb(187,50,142);}
+QSlider::groove:vertical:hover {background:rgba(237,100,192,0.25);}
+QSlider::groove:vertical {background:rgba(237,100,192,0.15);}
         </string>
-       </property>
-       <property name="maximum">
-        <number>4</number>
-       </property>
-       <property name="orientation">
-        <enum>Qt::Vertical</enum>
-       </property>
-       <property name="invertedAppearance">
-        <bool>true</bool>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="1">
-      <widget class="QSlider" name="altman_question_11">
-       <property name="styleSheet">
-        <string notr="true">
+             </property>
+             <property name="maximum">
+              <number>3</number>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="invertedAppearance">
+              <bool>false</bool>
+             </property>
+             <property name="invertedControls">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="8">
+            <widget class="QSlider" name="newBeck_8">
+             <property name="styleSheet">
+              <string notr="true">
 
 /* ///////////////////////////////////////////////////////////////
 QSlider Colors
 /////////////////////////////////////////////////////////////// */
 
-QSlider::handle:vertical {background:rgb(231,111,81);}
-QSlider::handle:vertical:hover {background:rgb(255,151,121);}
-QSlider::handle:vertical:pressed {background:rgb(181,61,31);}
-QSlider::groove:vertical:hover {background:rgba(231,111,81,0.25);}
-QSlider::groove:vertical {background:rgba(231,111,81,0.15);}
+QSlider::handle:vertical {background:rgb(120,169,255);}
+QSlider::handle:vertical:hover {background:rgb(160,209,255);}
+QSlider::handle:vertical:pressed {background:rgb(70,119,205);}
+QSlider::groove:vertical:hover {background:rgba(120,169,255,0.25);}
+QSlider::groove:vertical {background:rgba(120,169,255,0.15);}
 
         </string>
-       </property>
-       <property name="maximum">
-        <number>4</number>
-       </property>
-       <property name="orientation">
-        <enum>Qt::Vertical</enum>
-       </property>
-       <property name="invertedAppearance">
-        <bool>true</bool>
-       </property>
+             </property>
+             <property name="maximum">
+              <number>3</number>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="invertedAppearance">
+              <bool>false</bool>
+             </property>
+             <property name="invertedControls">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="6">
+            <widget class="QSlider" name="newBeck_6">
+             <property name="styleSheet">
+              <string notr="true">
+
+/* ///////////////////////////////////////////////////////////////
+QSlider Colors
+/////////////////////////////////////////////////////////////// */
+
+QSlider::handle:vertical {background:rgb(187,138,243);}
+QSlider::handle:vertical:hover {background:rgb(227,178,255);}
+QSlider::handle:vertical:pressed {background:rgb(137,88,193);}
+QSlider::groove:vertical:hover {background:rgba(187,138,243,0.25);}
+QSlider::groove:vertical {background:rgba(187,138,243,0.15);}
+
+        </string>
+             </property>
+             <property name="maximum">
+              <number>3</number>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="invertedAppearance">
+              <bool>false</bool>
+             </property>
+             <property name="invertedControls">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="7">
+            <widget class="QSlider" name="newBeck_7">
+             <property name="styleSheet">
+              <string notr="true">
+
+/* ///////////////////////////////////////////////////////////////
+QSlider Colors
+/////////////////////////////////////////////////////////////// */
+
+QSlider::handle:vertical {background:rgb(155,155,255);}
+QSlider::handle:vertical:hover {background:rgb(195,195,255);}
+QSlider::handle:vertical:pressed {background:rgb(105,105,205);}
+QSlider::groove:vertical:hover {background:rgba(155,155,255,0.25);}
+QSlider::groove:vertical {background:rgba(155,155,255,0.15);}
+
+        </string>
+             </property>
+             <property name="maximum">
+              <number>3</number>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="invertedAppearance">
+              <bool>false</bool>
+             </property>
+             <property name="invertedControls">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="11">
+            <spacer name="hs">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="1" column="6">
+            <spacer name="vs">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <spacer name="vs_2">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>question placeholder text</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
       </widget>
-     </item>
-    </layout>
-   </widget>
+      <widget class="QWidget" name="page_2">
+       <layout class="QGridLayout" name="gridLayout_5">
+        <item row="0" column="0">
+         <widget class="QFrame" name="frame">
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <widget class="QSlider" name="verticalSlider">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QScrollArea" name="scrollArea">
+             <property name="frameShape">
+              <enum>QFrame::NoFrame</enum>
+             </property>
+             <property name="widgetResizable">
+              <bool>true</bool>
+             </property>
+             <widget class="QWidget" name="scrollAreaWidgetContents">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>391</width>
+                <height>1494</height>
+               </rect>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_4">
+               <item row="0" column="0">
+                <widget class="QLabel" name="label">
+                 <property name="text">
+                  <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;ANSWER&lt;/p&gt;&lt;p&gt;Hiya! I totally got you covered—let's simplify this without losing the essence. We'll merge and reword the questions to reduce them to 10 while maintaining the integrity of the original Beck Depression Inventory. Then, I'll help adjust the scoring so it still aligns with the original scale.&lt;/p&gt;&lt;h3 style=&quot; margin-top:14px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:large; font-weight:600;&quot;&gt;Simplified &amp;quot;New BECK&amp;quot; Questions&lt;/span&gt;&lt;/h3&gt;&lt;ol style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&lt;li style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Sadness &amp;amp; Hopelessness:&lt;/span&gt;&lt;/li&gt;&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 2;&quot;&gt;&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;quot;I don't feel sad or hopeless.&amp;quot;&lt;/li&gt;&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;quot;I feel sad or discouraged about the future.&amp;quot;&lt;/li&gt;&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;quot;I often feel sad and believe the future holds no improvement.&amp;quot;&lt;/li&gt;&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;quot;I am constantly sad and hopeless, feeling that nothing will ever get better.&amp;quot;&lt;/li&gt;&lt;/ul&gt;&lt;li style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Self-Worth &amp;amp; Failure:&lt;/span&gt;&lt;/li&gt;&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 2;&quot;&gt;&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;quot;I don't feel like a failure or inferior to others.&amp;quot;&lt;/li&gt;&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;quot;I often feel like I've failed or am not as good as others.&amp;quot;&lt;/li&gt;&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;quot;I feel like a failure and blame myself for many things.&amp;quot;&lt;/li&gt;&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;quot;I believe I am a complete failure and worthless.&amp;quot;&lt;/li&gt;&lt;/ul&gt;&lt;li style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Enjoyment &amp;amp; Satisfaction:&lt;/span&gt;&lt;/li&gt;&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 2;&quot;&gt;&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;quot;I enjoy things as much as I always have.&amp;quot;&lt;/li&gt;&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;quot;I don't find as much joy or satisfaction in things as I used to.&amp;quot;&lt;/li&gt;&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;quot;I rarely enjoy anything anymore.&amp;quot;&lt;/li&gt;&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;quot;I get no satisfaction or joy from anything anymore.&amp;quot;&lt;/li&gt;&lt;/ul&gt;&lt;li style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Guilt &amp;amp; Punishment:&lt;/span&gt;&lt;/li&gt;&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 2;&quot;&gt;&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;quot;I don't feel guilty or think I deserve punishment.&amp;quot;&lt;/li&gt;&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;quot;I often feel guilty or expect to be punished.&amp;quot;&lt;/li&gt;&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;quot;I feel guilty most of the time and believe I deserve punishment.&amp;quot;&lt;/li&gt;&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;quot;I feel guilty all the time and that I am being punished.&amp;quot;&lt;/li&gt;&lt;/ul&gt;&lt;li style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Self-Dislike &amp;amp; Criticism:&lt;/span&gt;&lt;/li&gt;&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 2;&quot;&gt;&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;quot;I don't dislike myself or criticize myself harshly.&amp;quot;&lt;/li&gt;&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;quot;I am often disappointed in myself and critical of my faults.&amp;quot;&lt;/li&gt;&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;quot;I frequently dislike myself and am highly critical of my mistakes.&amp;quot;&lt;/li&gt;&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;quot;I hate myself and blame myself for everything.&amp;quot;&lt;/li&gt;&lt;/ul&gt;&lt;li style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Irritability &amp;amp; Interest in Others:&lt;/span&gt;&lt;/li&gt;&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 2;&quot;&gt;&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;quot;I am no more irritable or less interested in others than usual.&amp;quot;&lt;/li&gt;&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;quot;I get irritated more easily and find myself less interested in people.&amp;quot;&lt;/li&gt;&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;quot;I feel irritable most of the time and have lost interest in others.&amp;quot;&lt;/li&gt;&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;quot;I am always irritable and have no interest in anyone else.&amp;quot;&lt;/li&gt;&lt;/ul&gt;&lt;li style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Decision-Making &amp;amp; Appearance:&lt;/span&gt;&lt;/li&gt;&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 2;&quot;&gt;&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;quot;I make decisions as well as I always have and am not concerned about my appearance.&amp;quot;&lt;/li&gt;&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;quot;I find it harder to make decisions and worry about looking unattractive.&amp;quot;&lt;/li&gt;&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;quot;I struggle to make decisions and believe I look unattractive.&amp;quot;&lt;/li&gt;&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;quot;I can't make decisions and think I look ugly.&amp;quot;&lt;/li&gt;&lt;/ul&gt;&lt;li style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Energy &amp;amp; Sleep:&lt;/span&gt;&lt;/li&gt;&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 2;&quot;&gt;&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;quot;I have normal energy levels and sleep well.&amp;quot;&lt;/li&gt;&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;quot;I feel more tired than usual and have trouble sleeping.&amp;quot;&lt;/li&gt;&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;quot;I am tired most of the time and often wake up too early.&amp;quot;&lt;/li&gt;&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;quot;I am too tired to do anything and can’t sleep properly.&amp;quot;&lt;/li&gt;&lt;/ul&gt;&lt;li style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Appetite &amp;amp; Health Worries:&lt;/span&gt;&lt;/li&gt;&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 2;&quot;&gt;&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;quot;My appetite is normal and I'm not overly concerned about my health.&amp;quot;&lt;/li&gt;&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;quot;I have a reduced appetite and worry more about my health.&amp;quot;&lt;/li&gt;&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;quot;I have little appetite and am very concerned about my physical problems.&amp;quot;&lt;/li&gt;&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;quot;I have no appetite and am so worried about my health that I can think of nothing else.&amp;quot;&lt;/li&gt;&lt;/ul&gt;&lt;li style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Weight &amp;amp; Interest in Sex:&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&lt;li style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;quot;My weight has remained stable, and my interest in sex is normal.&amp;quot;&lt;/li&gt;&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;quot;I've lost some weight and have less interest in sex.&amp;quot;&lt;/li&gt;&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;quot;I've lost significant weight and have almost no interest in sex.&amp;quot;&lt;/li&gt;&lt;li style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;quot;I've lost a lot of weight and have completely lost interest in sex.&amp;quot;&lt;/li&gt;&lt;/ul&gt;&lt;h3 style=&quot; margin-top:14px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:large; font-weight:600;&quot;&gt;Adjusted Scoring System&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;Since we're halving the number of questions, we'll double the scoring potential of each one to align with the original:&lt;/p&gt;&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&lt;li style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Scoring:&lt;/span&gt; Each question will have 0-6 points (with 0, 2, 4, and 6 being the corresponding scores for the answer choices).&lt;/li&gt;&lt;li style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Total Score Range:&lt;/span&gt; 0 to 60 (as opposed to the original 0-63).&lt;/li&gt;&lt;/ul&gt;&lt;h3 style=&quot; margin-top:14px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:large; font-weight:600;&quot;&gt;Adjusted Summary Results&lt;/span&gt;&lt;/h3&gt;&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&lt;li style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;1-10:&lt;/span&gt; These ups and downs are considered normal.&lt;/li&gt;&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;11-16:&lt;/span&gt; Mild mood disturbance.&lt;/li&gt;&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;17-20:&lt;/span&gt; Borderline clinical depression.&lt;/li&gt;&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;21-30:&lt;/span&gt; Moderate depression.&lt;/li&gt;&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;31-40:&lt;/span&gt; Severe depression.&lt;/li&gt;&lt;li style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Over 40:&lt;/span&gt; Extreme depression.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                 </property>
+                 <property name="wordWrap">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>498</width>
      <height>17</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menunBeck">
+    <property name="title">
+     <string>nBeck</string>
+    </property>
+    <addaction name="actionClose"/>
+   </widget>
+   <widget class="QMenu" name="menuDats">
+    <property name="title">
+     <string>Dats</string>
+    </property>
+    <addaction name="actionCommit"/>
+    <addaction name="actionDelete_Selected_Record_s"/>
+   </widget>
+   <widget class="QMenu" name="menuViews">
+    <property name="title">
+     <string>Views</string>
+    </property>
+    <addaction name="actionShow_Input"/>
+    <addaction name="actionShow_Data"/>
+    <addaction name="actionShow_Teacher"/>
+   </widget>
+   <addaction name="menunBeck"/>
+   <addaction name="menuDats"/>
+   <addaction name="menuViews"/>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionClose">
+   <property name="text">
+    <string>Close</string>
+   </property>
+  </action>
+  <action name="actionCommit">
+   <property name="text">
+    <string>Commit</string>
+   </property>
+  </action>
+  <action name="actionDelete_Selected_Record_s">
+   <property name="text">
+    <string>Delete Selected Record(s)</string>
+   </property>
+  </action>
+  <action name="actionShow_Input">
+   <property name="text">
+    <string>Show Input</string>
+   </property>
+  </action>
+  <action name="actionShow_Data">
+   <property name="text">
+    <string>Show Data</string>
+   </property>
+  </action>
+  <action name="actionShow_Teacher">
+   <property name="text">
+    <string>Show Teacher</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>
