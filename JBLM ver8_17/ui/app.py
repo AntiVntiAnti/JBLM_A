@@ -113,6 +113,8 @@ from settingsmanagers.agenda.friday import (
     SettingsManagerAgendaFriday)  # FRIDAY
 from settingsmanagers.agenda.saturday import (
     SettingsManagerAgendaSaturday)  # SATURDAY
+
+# lily's mood and time_in_room settings
 from settingsmanagers.lilys_widgets import SettingsManagerLilysWidgets
 # Formatters
 from formatters.colors.highlight import HighlightColorFormatter

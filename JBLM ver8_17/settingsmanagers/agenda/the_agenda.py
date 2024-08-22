@@ -3,6 +3,7 @@ from PyQt6.QtWidgets import QDateEdit, QTextEdit
 import tracker_config as tkc
 from logger_setup import logger
 
+
 class SettingsManagerAgendaFriday:
     """
     A class that manages the settings for the Friday agenda in the application.
