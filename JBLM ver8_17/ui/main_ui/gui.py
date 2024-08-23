@@ -867,9 +867,7 @@ class Ui_MainWindow(object):
         self.gridLayout_20.setSpacing(0)
         self.gridLayout_20.setObjectName("gridLayout_20")
         self.mainStack = QtWidgets.QStackedWidget(parent=self.centralwidget)
-        self.mainStack.setStyleSheet("QSlider:vertical {\n"
-"min-height: 240px;\n"
-"}")
+        self.mainStack.setStyleSheet("")
         self.mainStack.setObjectName("mainStack")
         self.page = QtWidgets.QWidget()
         self.page.setObjectName("page")
@@ -2525,8 +2523,6 @@ class Ui_MainWindow(object):
         self.mentalpage.setObjectName("mentalpage")
         self.gridLayout_2 = QtWidgets.QGridLayout(self.mentalpage)
         self.gridLayout_2.setObjectName("gridLayout_2")
-        spacerItem18 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Policy.Minimum, QtWidgets.QSizePolicy.Policy.Expanding)
-        self.gridLayout_2.addItem(spacerItem18, 2, 0, 1, 1)
         self.tabWidget_3 = QtWidgets.QTabWidget(parent=self.mentalpage)
         self.tabWidget_3.setStyleSheet("QTabWidget {\n"
 "    background-color: #121212;    color:#fff;\n"
@@ -3398,9 +3394,7 @@ class Ui_MainWindow(object):
         icon2.addPixmap(QtGui.QPixmap(":/newPrefix/BECK EXAM/sdfdsfs.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         icon2.addPixmap(QtGui.QPixmap(":/newPrefix/BECK EXAM/asdfsafdsdf.png"), QtGui.QIcon.Mode.Active, QtGui.QIcon.State.On)
         self.tabWidget_3.addTab(self.tab_12, icon2, "")
-        self.gridLayout_2.addWidget(self.tabWidget_3, 1, 0, 1, 1)
-        spacerItem19 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Policy.Minimum, QtWidgets.QSizePolicy.Policy.Expanding)
-        self.gridLayout_2.addItem(spacerItem19, 0, 0, 1, 1)
+        self.gridLayout_2.addWidget(self.tabWidget_3, 0, 0, 1, 1)
         self.mainStack.addWidget(self.mentalpage)
         self.sleep_data_page = QtWidgets.QWidget()
         self.sleep_data_page.setObjectName("sleep_data_page")
@@ -4342,7 +4336,7 @@ class Ui_MainWindow(object):
         self.mainStack.setCurrentIndex(0)
         self.agendaStack.setCurrentIndex(0)
         self.agenda_journal_stack.setCurrentIndex(0)
-        self.agenda_data_stack.setCurrentIndex(6)
+        self.agenda_data_stack.setCurrentIndex(0)
         self.tabWidget_3.setCurrentIndex(0)
         self.tabWidget.setCurrentIndex(0)
         self.tabWidget_2.setCurrentIndex(0)

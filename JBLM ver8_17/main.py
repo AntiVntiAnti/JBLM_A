@@ -1,4 +1,4 @@
-from PyQt6.QtWidgets import QApplication
+from PyQt6.QtWidgets import QApplication, QStyleFactory
 from ui.app import MainWindow
 import sys
 from logger_setup import logger
@@ -20,7 +20,7 @@ def run_app():
     logger.debug("Entry Point bega'th")
     try:
         app = QApplication(sys.argv)
-        
+        app.setStyle(QStyleFactory.create("Fusion"))
         # Initialize the system tray
         # tray = wizardz()
         
