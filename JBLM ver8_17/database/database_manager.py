@@ -85,41 +85,29 @@ class DataManager:
             logger.error(f"Error creating table: sundays table", self.query.lastError().text())
     
     def insert_into_sunday_table(self,
-                                 sun_date,
-                                 sun_note_one):
-        """
-        Inserts a new row into the 'sunday_table' with the given 'sun_date' and 'sun_note_one' values.
-
-        Args:
-            sun_date (str): The date value to be inserted.
-            sun_note_one (str): The note value to be inserted.
-
-        Raises:
-            ValueError: If there is a mismatch between the number of '?' placeholders in the SQL query and the number of bind values.
-
-        Returns:
-            None
-        """
-        sql = f"""INSERT INTO sunday_table(sun_date, sun_note_one)
-            VALUES (?, ?)"""
-        bind_values = [sun_date, sun_note_one]
-        # ERROR ANGELS
+                                 sun_date: str,
+                                 sun_note_one: str
+                                 ) -> None:
+        
+        sql: str = f"""INSERT INTO sunday_table(
+                            sun_date,
+                            sun_note_one) VALUES (?, ?)"""
+        
+        bind_values: List[Union[str, int]] = [sun_date, sun_note_one]
         try:
             self.query.prepare(sql)
-            # Add bind values
             for value in bind_values:
                 self.query.addBindValue(value)
-            # Check for mismatch between ? and bind values
             if sql.count('?') != len(bind_values):
-                raise ValueError(f"""Mismatch:sunday Expected {sql.count('?')}
-                bind values, got {len(bind_values)}.""")
+                raise ValueError(f"""Mismatch: sunday_table Expected {sql.count('?')}
+                                        bind values, got {len(bind_values)}.""")
             if not self.query.exec():
-                logger.error(f"Error inserting data: sunday - {self.query.lastError().text()}")
-        except ValueError as ve:
-            # Catching specific ValueError for mismatches
-            logger.error(f"ValueError sunday: {str(ve)}")
+                logger.error(
+                    f"Error inserting data: sunday_table - {self.query.lastError().text()}")
+        except ValueError as e:
+            logger.error(f"ValueError sunday_table: {e}")
         except Exception as e:
-            logger.error(f"Error during data insertion: sunday", str(e))
+            logger.error(f"Error during data insertion: sunday_table {e}", exc_info=True)
     
     def setup_table_monday(self):
         """
@@ -143,43 +131,29 @@ class DataManager:
             logger.error(f"Error creating table: mondays table", self.query.lastError().text())
     
     def insert_into_monday_table(self,
-                                 mon_date,
-                                 mon_note_one):
-        """
-        Inserts a new row into the 'monday_table' with the given 'mon_date' and 'mon_note_one' values.
-
-        Args:
-            mon_date (str): The date value to be inserted.
-            mon_note_one (str): The note value to be inserted.
-
-        Raises:
-            ValueError: If there is a mismatch between the number of '?' placeholders in the SQL statement and the number of bind values.
-
-        Returns:
-            None
-        """
-        # Prepare the SQL statement
-        sql = f"""INSERT INTO monday_table(mon_date, mon_note_one)
-        VALUES (?, ?)"""
-        bind_values = [mon_date, mon_note_one]
+                                 mon_date: str,
+                                 mon_note_one: str
+                                 ) -> None:
+        
+        sql: str = f"""INSERT INTO monday_table(
+                            mon_date,
+                            mon_note_one) VALUES (?, ?)"""
+        
+        bind_values: List[Union[str, int]] = [mon_date, mon_note_one]
         try:
             self.query.prepare(sql)
-            
-            # Add bind values
             for value in bind_values:
                 self.query.addBindValue(value)
-            
-            # Check for mismatch between ? and bind values
             if sql.count('?') != len(bind_values):
-                raise ValueError(f"""Mismatch:monday Expected {sql.count('?')}
-                bind values, got {len(bind_values)}.""")
+                raise ValueError(f"""Mismatch: monday_table Expected {sql.count('?')}
+                                        bind values, got {len(bind_values)}.""")
             if not self.query.exec():
-                logger.error(f"Error inserting data: monday - {self.query.lastError().text()}")
-        except ValueError as ve:
-            # Catching specific ValueError for mismatches
-            logger.error(f"ValueError table_sixteen: {str(ve)}")
+                logger.error(
+                    f"Error inserting data: monday_table - {self.query.lastError().text()}")
+        except ValueError as e:
+            logger.error(f"ValueError monday_table: {e}")
         except Exception as e:
-            logger.error(f"Error during data insertion: table_sixteen", str(e))
+            logger.error(f"Error during data insertion: monday_table {e}", exc_info=True)
     
     def setup_table_tuesday(self):
         """
@@ -197,36 +171,29 @@ class DataManager:
             logger.error(f"Error creating table: tuesdays table", self.query.lastError().text())
     
     def insert_into_tuesday_table(self,
-                                  tues_date,
-                                  tues_note_one):
-        """
-        Inserts a new row into the 'tuesday_table' with the given tues_date and tues_note_one values.
-
-        Args:
-            tues_date (str): The date for the Tuesday.
-            tues_note_one (str): The first note for the Tuesday.
-
-        Raises:
-            ValueError: If the number of bind values in the SQL query does not match the number of provided values.
-
-        Returns:
-            None
-        """
-        sql = f"""INSERT INTO tuesday_table(tues_date, tues_note_one) VALUES (?, ?)"""
-        bind_values = [tues_date, tues_note_one]
+                                  tues_date: str,
+                                  tues_note_one: str
+                                  ) -> None:
+        
+        sql: str = f"""INSERT INTO tuesday_table(
+                            tues_date,
+                            tues_note_one) VALUES (?, ?)"""
+        
+        bind_values: List[Union[str, int]] = [tues_date, tues_note_one]
         try:
             self.query.prepare(sql)
             for value in bind_values:
                 self.query.addBindValue(value)
             if sql.count('?') != len(bind_values):
-                raise ValueError(f"Mismatch:tuesday Expected {sql.count('?')} bind values, got "
-                                 f"{len(bind_values)}.")
+                raise ValueError(f"""Mismatch: tuesday_table Expected {sql.count('?')}
+                                        bind values, got {len(bind_values)}.""")
             if not self.query.exec():
-                logger.error(f"Error inserting data: tues - {self.query.lastError().text()}")
-        except ValueError as ve:
-            logger.error(f"ValueError tuesday: {str(ve)}")
+                logger.error(
+                    f"Error inserting data: tuesday_table - {self.query.lastError().text()}")
+        except ValueError as e:
+            logger.error(f"ValueError tuesday_table: {e}")
         except Exception as e:
-            logger.error(f"Error during data insertion: tuesday", str(e))
+            logger.error(f"Error during data insertion: tuesday_table {e}", exc_info=True)
     
     def setup_table_wednesday(self):
         """
@@ -244,36 +211,29 @@ class DataManager:
             logger.error(f"Error creating table: wednesday table", self.query.lastError().text())
     
     def insert_into_wednesday_table(self,
-                                    wed_date,
-                                    wed_note_one):
-        """
-        Inserts a new record into the 'wednesday_table' table with the given 'wed_date' and 'wed_note_one' values.
-
-        Args:
-            wed_date (str): The date for the record.
-            wed_note_one (str): The note for the record.
-
-        Raises:
-            ValueError: If the number of bind values in the SQL query does not match the number of provided values.
-
-        Returns:
-            None
-        """
-        sql = f"""INSERT INTO wednesday_table(wed_date, wed_note_one) VALUES (?, ?)"""
-        bind_values = [wed_date, wed_note_one]
+                                    wed_date: str,
+                                    wed_note_one: str
+                                    ) -> None:
+        
+        sql: str = f"""INSERT INTO wednesday_table(
+                            wed_date,
+                            wed_note_one) VALUES (?, ?)"""
+        
+        bind_values: List[Union[str, int]] = [wed_date, wed_note_one]
         try:
             self.query.prepare(sql)
             for value in bind_values:
                 self.query.addBindValue(value)
             if sql.count('?') != len(bind_values):
-                raise ValueError(f"Mismatch:wednesday Expected {sql.count('?')} bind values, got "
-                                 f"{len(bind_values)}.")
+                raise ValueError(f"""Mismatch: wednesday_table Expected {sql.count('?')}
+                                        bind values, got {len(bind_values)}.""")
             if not self.query.exec():
-                logger.error(f"Error inserting data: wed - {self.query.lastError().text()}")
-        except ValueError as ve:
-            logger.error(f"ValueError wednesday: {str(ve)}")
+                logger.error(
+                    f"Error inserting data: wednesday_table - {self.query.lastError().text()}")
+        except ValueError as e:
+            logger.error(f"ValueError wednesday_table: {e}")
         except Exception as e:
-            logger.error(f"Error during data insertion: wednesday", str(e))
+            logger.error(f"Error during data insertion: wednesday_table {e}", exc_info=True)
     
     def setup_table_thursday(self):
         """
@@ -297,36 +257,29 @@ class DataManager:
             logger.error(f"Error creating table: thursday table", self.query.lastError().text())
     
     def insert_into_thursday_table(self,
-                                   thurs_date,
-                                   thurs_note_one):
-        """
-        Inserts a new row into the 'thursday_table' with the given 'thurs_date' and 'thurs_note_one' values.
-
-        Args:
-            thurs_date (str): The date for the Thursday.
-            thurs_note_one (str): The first note for the Thursday.
-
-        Raises:
-            ValueError: If the number of bind values in the SQL query does not match the number of provided values.
-
-        Returns:
-            None
-        """
-        sql = f"""INSERT INTO thursday_table(thurs_date, thurs_note_one) VALUES (?, ?)"""
-        bind_values = [thurs_date, thurs_note_one]
+                                   thurs_date: str,
+                                   thurs_note_one: str
+                                   ) -> None:
+        
+        sql: str = f"""INSERT INTO thursday_table(
+                            thurs_date,
+                            thurs_note_one) VALUES (?, ?)"""
+        
+        bind_values: List[Union[str, int]] = [thurs_date, thurs_note_one]
         try:
             self.query.prepare(sql)
             for value in bind_values:
                 self.query.addBindValue(value)
             if sql.count('?') != len(bind_values):
-                raise ValueError(f"Mismatch:thursday Expected {sql.count('?')} bind values, got "
-                                 f"{len(bind_values)}.")
+                raise ValueError(f"""Mismatch: thursday_table Expected {sql.count('?')}
+                                        bind values, got {len(bind_values)}.""")
             if not self.query.exec():
-                logger.error(f"Error inserting data: thursday - {self.query.lastError().text()}")
-        except ValueError as ve:
-            logger.error(f"ValueError thursday: {str(ve)}")
+                logger.error(
+                    f"Error inserting data: thursday_table - {self.query.lastError().text()}")
+        except ValueError as e:
+            logger.error(f"ValueError thursday_table: {e}")
         except Exception as e:
-            logger.error(f"Error during data insertion: thursday", str(e))
+            logger.error(f"Error during data insertion: thursday_table {e}", exc_info=True)
     
     def setup_table_friday(self):
         """
@@ -344,35 +297,29 @@ class DataManager:
             logger.error(f"Error creating table: fridays table", self.query.lastError().text())
     
     def insert_into_friday_table(self,
-                                 fri_date,
-                                 fri_note_one):
-        """
-        Inserts a new row into the 'friday_table' with the given 'fri_date' and 'fri_note_one' values.
-
-        Args:
-            fri_date (str): The date for the Friday entry.
-            fri_note_one (str): The note for the Friday entry.
-
-        Raises:
-            ValueError: If the number of bind values in the SQL query does not match the number of provided values.
-            Exception: If there is an error during data insertion.
-
-        """
-        sql = f"""INSERT INTO friday_table(fri_date, fri_note_one) VALUES (?, ?)"""
-        bind_values = [fri_date, fri_note_one]
+                                 fri_date: str,
+                                 fri_note_one: str
+                                 ) -> None:
+        
+        sql: str = f"""INSERT INTO friday_table(
+                            fri_date,
+                            fri_note_one) VALUES (?, ?)"""
+        
+        bind_values: List[Union[str, int]] = [fri_date, fri_note_one]
         try:
             self.query.prepare(sql)
             for value in bind_values:
                 self.query.addBindValue(value)
             if sql.count('?') != len(bind_values):
-                raise ValueError(f"Mismatch:friday Expected {sql.count('?')} bind values, got "
-                                 f"{len(bind_values)}.")
+                raise ValueError(f"""Mismatch: friday_table Expected {sql.count('?')}
+                                        bind values, got {len(bind_values)}.""")
             if not self.query.exec():
-                logger.error(f"Error inserting data: friday - {self.query.lastError().text()}")
-        except ValueError as ve:
-            logger.error(f"ValueError friday: {str(ve)}")
+                logger.error(
+                    f"Error inserting data: friday_table - {self.query.lastError().text()}")
+        except ValueError as e:
+            logger.error(f"ValueError friday_table: {e}")
         except Exception as e:
-            logger.error(f"Error during data insertion: friday", str(e))
+            logger.error(f"Error during data insertion: friday_table {e}", exc_info=True)
     
     def setup_table_saturday(self):
         if not self.query.exec(f"""
@@ -384,279 +331,29 @@ class DataManager:
             logger.error(f"Error creating table: saturdays table", self.query.lastError().text())
     
     def insert_into_saturday_table(self,
-                                   sat_date,
-                                   sat_note_one):
-        """
-        Inserts a new record into the 'saturday_table' with the given 'sat_date' and 'sat_note_one' values.
-
-        Args:
-            sat_date (str): The date to be inserted.
-            sat_note_one (str): The note to be inserted.
-
-        Raises:
-            ValueError: If the number of bind values in the SQL query does not match the number of provided values.
-            Exception: If an error occurs during data insertion.
-
-        """
-        sql = f"""INSERT INTO saturday_table(sat_date, sat_note_one) VALUES (?, ?)"""
-        bind_values = [sat_date, sat_note_one]
+                                   sat_date: str,
+                                   sat_note_one: str
+                                   ) -> None:
+        
+        sql: str = f"""INSERT INTO saturday_table(
+                            sat_date,
+                            sat_note_one) VALUES (?, ?)"""
+        
+        bind_values: List[Union[str, int]] = [sat_date, sat_note_one]
         try:
             self.query.prepare(sql)
             for value in bind_values:
                 self.query.addBindValue(value)
             if sql.count('?') != len(bind_values):
-                raise ValueError(f"Mismatch:saturday Expected {sql.count('?')} bind values, got "
-                                 f"{len(bind_values)}.")
+                raise ValueError(f"""Mismatch: saturday_table Expected {sql.count('?')}
+                                        bind values, got {len(bind_values)}.""")
             if not self.query.exec():
-                logger.error(f"Error inserting data: saturday - {self.query.lastError().text()}")
-        except ValueError as ve:
-            logger.error(f"ValueError saturday: {str(ve)}")
+                logger.error(
+                    f"Error inserting data: saturday_table - {self.query.lastError().text()}")
+        except ValueError as e:
+            logger.error(f"ValueError saturday_table: {e}")
         except Exception as e:
-            logger.error(f"Error during data insertion: saturday", str(e))
-    # def setup_sunday_table(self) -> None:
-    #     if not self.query.exec(f"""
-    #     CREATE TABLE IF NOT EXISTS sunday_table (
-    #     id INTEGER PRIMARY KEY AUTOINCREMENT,
-    #     sun_date TEXT,
-    #     sun_note_one TEXT
-    #     )"""):
-    #         logger.error(f"Error creating table: sunday_table",
-    #                      self.query.lastError().text())
-    #
-    # def insert_into_sunday_table(self,
-    #                              sun_date: str,
-    #                              sun_note_one: str,
-    #                              ) -> None:
-    #     sql: str = f"""INSERT INTO sunday_table(
-    #                         sun_date,
-    #                         sun_note_one,
-    #                         ) VALUES (?, ?)"""
-    #
-    #     bind_values: List[Union[str, int]] = [sun_date, sun_note_one]
-    #     try:
-    #         self.query.prepare(sql)
-    #         for value in bind_values:
-    #             self.query.addBindValue(value)
-    #         if sql.count('?') != len(bind_values):
-    #             raise ValueError(f"""Mismatch: sunday_table Expected {sql.count('?')}
-    #                                     bind values, got {len(bind_values)}.""")
-    #         if not self.query.exec():
-    #             logger.error(
-    #                 f"Error inserting data: sunday_table - {self.query.lastError().text()}")
-    #     except ValueError as e:
-    #         logger.error(f"ValueError sunday_table: {e}")
-    #     except Exception as e:
-    #         logger.error(f"Error during data insertion: sunday_table {e}", exc_info=True)
-    #
-    # def setup_monday_table(self) -> None:
-    #     if not self.query.exec(f"""
-    #     CREATE TABLE IF NOT EXISTS monday_table (
-    #     id INTEGER PRIMARY KEY AUTOINCREMENT,
-    #     mon_date TEXT,
-    #     mon_note_one TEXT
-    #     )"""):
-    #         logger.error(f"Error creating table: monday_table",
-    #                      self.query.lastError().text())
-    #
-    # def insert_into_monday_table(self,
-    #                              mon_date: str,
-    #                              mon_note_one: str,
-    #                              ) -> None:
-    #     sql: str = f"""INSERT INTO monday_table(
-    #                         mon_date,
-    #                         mon_note_one,
-    #                         ) VALUES (?, ?)"""
-    #
-    #     bind_values: List[Union[str, int]] = [mon_date, mon_note_one]
-    #     try:
-    #         self.query.prepare(sql)
-    #         for value in bind_values:
-    #             self.query.addBindValue(value)
-    #         if sql.count('?') != len(bind_values):
-    #             raise ValueError(f"""Mismatch: monday_table Expected {sql.count('?')}
-    #                                     bind values, got {len(bind_values)}.""")
-    #         if not self.query.exec():
-    #             logger.error(
-    #                 f"Error inserting data: monday_table - {self.query.lastError().text()}")
-    #     except ValueError as e:
-    #         logger.error(f"ValueError monday_table: {e}")
-    #     except Exception as e:
-    #         logger.error(f"Error during data insertion: monday_table {e}", exc_info=True)
-    #
-    # def setup_tuesday_table(self) -> None:
-    #     if not self.query.exec(f"""
-    #     CREATE TABLE IF NOT EXISTS tuesday_table (
-    #     id INTEGER PRIMARY KEY AUTOINCREMENT,
-    #     tues_date TEXT,
-    #     tues_note_one TEXT
-    #     )"""):
-    #         logger.error(f"Error creating table: tuesday_table",
-    #                      self.query.lastError().text())
-    #
-    # def insert_into_tuesday_table(self,
-    #                               tues_date: str,
-    #                               tues_note_one: str,
-    #                               ) -> None:
-    #     sql: str = f"""INSERT INTO tuesday_table(
-    #                         tues_date,
-    #                         tues_note_one,
-    #                         ) VALUES (?, ?)"""
-    #
-    #     bind_values: List[Union[str, int]] = [tues_date, tues_note_one]
-    #     try:
-    #         self.query.prepare(sql)
-    #         for value in bind_values:
-    #             self.query.addBindValue(value)
-    #         if sql.count('?') != len(bind_values):
-    #             raise ValueError(f"""Mismatch: tuesday_table Expected {sql.count('?')}
-    #                                     bind values, got {len(bind_values)}.""")
-    #         if not self.query.exec():
-    #             logger.error(
-    #                 f"Error inserting data: tuesday_table - {self.query.lastError().text()}")
-    #     except ValueError as e:
-    #         logger.error(f"ValueError tuesday_table: {e}")
-    #     except Exception as e:
-    #         logger.error(f"Error during data insertion: tuesday_table {e}", exc_info=True)
-    #
-    # def setup_wednesday_table(self) -> None:
-    #     if not self.query.exec(f"""
-    #     CREATE TABLE IF NOT EXISTS wednesday_table (
-    #     id INTEGER PRIMARY KEY AUTOINCREMENT,
-    #     wed_date TEXT,
-    #     wed_note_one TEXT
-    #     )"""):
-    #         logger.error(f"Error creating table: wednesday_table",
-    #                      self.query.lastError().text())
-    #
-    # def insert_into_wednesday_table(self,
-    #                                 wed_date: str,
-    #                                 wed_note_one: str,
-    #                                 ) -> None:
-    #     sql: str = f"""INSERT INTO wednesday_table(
-    #                         wed_date,
-    #                         wed_note_one,
-    #                         ) VALUES (?, ?)"""
-    #
-    #     bind_values: List[Union[str, int]] = [wed_date, wed_note_one]
-    #     try:
-    #         self.query.prepare(sql)
-    #         for value in bind_values:
-    #             self.query.addBindValue(value)
-    #         if sql.count('?') != len(bind_values):
-    #             raise ValueError(f"""Mismatch: wednesday_table Expected {sql.count('?')}
-    #                                     bind values, got {len(bind_values)}.""")
-    #         if not self.query.exec():
-    #             logger.error(
-    #                 f"Error inserting data: wednesday_table - {self.query.lastError().text()}")
-    #     except ValueError as e:
-    #         logger.error(f"ValueError wednesday_table: {e}")
-    #     except Exception as e:
-    #         logger.error(f"Error during data insertion: wednesday_table {e}", exc_info=True)
-    #
-    # def setup_thursday_table(self) -> None:
-    #     if not self.query.exec(f"""
-    #     CREATE TABLE IF NOT EXISTS thursday_table (
-    #     id INTEGER PRIMARY KEY AUTOINCREMENT,
-    #     thurs_date TEXT,
-    #     thurs_note_one TEXT
-    #     )"""):
-    #         logger.error(f"Error creating table: thursday_table",
-    #                      self.query.lastError().text())
-    #
-    # def insert_into_thursday_table(self,
-    #                                thurs_date: str,
-    #                                thurs_note_one: str,
-    #                                ) -> None:
-    #     sql: str = f"""INSERT INTO thursday_table(
-    #                         thurs_date,
-    #                         thurs_note_one,
-    #                         ) VALUES (?, ?)"""
-    #
-    #     bind_values: List[Union[str, int]] = [thurs_date, thurs_note_one]
-    #     try:
-    #         self.query.prepare(sql)
-    #         for value in bind_values:
-    #             self.query.addBindValue(value)
-    #         if sql.count('?') != len(bind_values):
-    #             raise ValueError(f"""Mismatch: thursday_table Expected {sql.count('?')}
-    #                                     bind values, got {len(bind_values)}.""")
-    #         if not self.query.exec():
-    #             logger.error(
-    #                 f"Error inserting data: thursday_table - {self.query.lastError().text()}")
-    #     except ValueError as e:
-    #         logger.error(f"ValueError thursday_table: {e}")
-    #     except Exception as e:
-    #         logger.error(f"Error during data insertion: thursday_table {e}", exc_info=True)
-    #
-    # def setup_friday_table(self) -> None:
-    #     if not self.query.exec(f"""
-    #     CREATE TABLE IF NOT EXISTS friday_table (
-    #     id INTEGER PRIMARY KEY AUTOINCREMENT,
-    #     fri_date TEXT,
-    #     fri_note_one TEXT
-    #     )"""):
-    #         logger.error(f"Error creating table: friday_table",
-    #                      self.query.lastError().text())
-    #
-    # def insert_into_friday_table(self,
-    #                              fri_date: str,
-    #                              fri_note_one: str,
-    #                              ) -> None:
-    #     sql: str = f"""INSERT INTO friday_table(
-    #                         fri_date,
-    #                         fri_note_one,
-    #                         ) VALUES (?, ?)"""
-    #
-    #     bind_values: List[Union[str, int]] = [fri_date, fri_note_one]
-    #     try:
-    #         self.query.prepare(sql)
-    #         for value in bind_values:
-    #             self.query.addBindValue(value)
-    #         if sql.count('?') != len(bind_values):
-    #             raise ValueError(f"""Mismatch: friday_table Expected {sql.count('?')}
-    #                                     bind values, got {len(bind_values)}.""")
-    #         if not self.query.exec():
-    #             logger.error(
-    #                 f"Error inserting data: friday_table - {self.query.lastError().text()}")
-    #     except ValueError as e:
-    #         logger.error(f"ValueError friday_table: {e}")
-    #     except Exception as e:
-    #         logger.error(f"Error during data insertion: friday_table {e}", exc_info=True)
-    #
-    # def setup_saturday_table(self) -> None:
-    #     if not self.query.exec(f"""
-    #     CREATE TABLE IF NOT EXISTS saturday_table (
-    #     id INTEGER PRIMARY KEY AUTOINCREMENT,
-    #     sat_date TEXT,
-    #     sat_note_one TEXT
-    #     )"""):
-    #         logger.error(f"Error creating table: saturday_table",
-    #                      self.query.lastError().text())
-    #
-    # def insert_into_saturday_table(self,
-    #                                sat_date: str,
-    #                                sat_note_one: str,
-    #                                ) -> None:
-    #     sql: str = f"""INSERT INTO saturday_table(
-    #                         sat_date,
-    #                         sat_note_one,
-    #                         ) VALUES (?, ?)"""
-    #
-    #     bind_values: List[Union[str, int]] = [sat_date, sat_note_one]
-    #     try:
-    #         self.query.prepare(sql)
-    #         for value in bind_values:
-    #             self.query.addBindValue(value)
-    #         if sql.count('?') != len(bind_values):
-    #             raise ValueError(f"""Mismatch: saturday_table Expected {sql.count('?')}
-    #                                     bind values, got {len(bind_values)}.""")
-    #         if not self.query.exec():
-    #             logger.error(
-    #                 f"Error inserting data: saturday_table - {self.query.lastError().text()}")
-    #     except ValueError as e:
-    #         logger.error(f"ValueError saturday_table: {e}")
-    #     except Exception as e:
-    #         logger.error(f"Error during data insertion: saturday_table {e}", exc_info=True)
+            logger.error(f"Error during data insertion: saturday_table {e}", exc_info=True)
     
     def setup_mmdmr_table(self) -> None:
         """

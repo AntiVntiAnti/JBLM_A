@@ -5,14 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe220175-00a7-451a-910a-28fd925712a6" name="Changes" comment="Guten Tag">
-      <change afterPath="$PROJECT_DIR$/gui.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/playthings/data/delete_records.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/playthings/data/model_setup.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/relations.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JBLM ver8_17/JBLMA_24.ui" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JBLM ver8_17/JBLMA_25.ui" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KNOTS/8-18-24/asdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KNOTS/8-24-24/checkersmateandsmate.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KNOTS/8-24-24/relations.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consideringAdditionalTrackers/checkyacss.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JBLM ver8_17/JBLMA_8_17.ui" beforeDir="false" afterPath="$PROJECT_DIR$/JBLM ver8_17/JBLMA_8_17.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JBLM ver8_17/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/JBLM ver8_17/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JBLM ver8_17/Becky.ui" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JBLM ver8_17/JBLMA_8_17.ui" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JBLM ver8_17/database/database_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/JBLM ver8_17/database/database_manager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JBLM ver8_17/system_tray_magicks.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/JBLM ver8_17/ui/main_ui/gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/JBLM ver8_17/ui/main_ui/gui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KNOTS/8-18-24/8-18.md" beforeDir="false" afterPath="$PROJECT_DIR$/KNOTS/8-18-24/8-18.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KNOTS/8-19-24/notes.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/relations.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wonky_bits.ui" beforeDir="false" afterPath="$PROJECT_DIR$/wonky_bits.ui" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,18 +66,19 @@
     <option name="showScratchesAndConsoles" value="false" />
     <option name="sortKey" value="BY_TIME_DESCENDING" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Python.main.executor": "Run",
-    "Python.relations.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/therage/TRACKERFULLFUCKERONLY/JBLM_A/playthings/data",
-    "run.code.analysis.last.selected.profile": "pProject Default"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Python.checkersmateandsmate.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.relations.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/therage/TRACKERFULLFUCKERONLY/JBLM_A/playthings/data&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/playthings/data" />
@@ -166,7 +176,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724295899235</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Guten Tag">
+      <option name="closed" value="true" />
+      <created>1724379434832</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1724379434832</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

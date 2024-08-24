@@ -1,4 +1,4 @@
-# Form implementation generated from reading ui file 'JBLMA_8_17.ui'
+# Form implementation generated from reading ui file 'JBLMA_24.ui'
 #
 # Created by: PyQt6 UI code generator 6.7.1
 #
@@ -12,9 +12,9 @@ from PyQt6 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(325, 348)
+        MainWindow.resize(325, 338)
         MainWindow.setStyleSheet("QWidget {\n"
-"    font: 11pt \"Helvetica\";\n"
+"    font: 10pt \"Lato\";\n"
 "    background:#121212;\n"
 "    color:rgb(255,255,255);\n"
 "}\n"
@@ -54,10 +54,10 @@ class Ui_MainWindow(object):
 "#shower_table::item:selected,\n"
 "#teethbrushed_table::item:selected,\n"
 "#yoga_table::item:selected {\n"
-"color: #fff;\n"
-"background:rgb(23, 23, 23);\n"
+"color:#fff;\n"
+"background:rgb(132,127,239);\n"
 "}\n"
-"    \n"
+"\n"
 "\n"
 "/* /////////////////////////////////////////////////////////////////////////////\n"
 "QTextEdit\n"
@@ -379,8 +379,8 @@ class Ui_MainWindow(object):
 "#lily_diet_table::item:selected,\n"
 "#lily_mood_table::item:selected,\n"
 "#lily_walk_table::item:selected {\n"
-"    color: #fff;\n"
-"    background:rgb(23, 23, 23);\n"
+"    color:#fff;\n"
+"    background:rgb(180, 149, 210);\n"
 "}\n"
 "\n"
 "/*\n"
@@ -542,6 +542,7 @@ class Ui_MainWindow(object):
 "QSlider:horizontal {\n"
 "    background:transparent;\n"
 "border:none;\n"
+"min-height:18px;\n"
 "}\n"
 "QSlider::groove:horizontal {\n"
 "    border-radius: 8px;\n"
@@ -877,8 +878,8 @@ class Ui_MainWindow(object):
         self.gridLayout_53.setObjectName("gridLayout_53")
         self.agendaStack = QtWidgets.QStackedWidget(parent=self.page)
         font = QtGui.QFont()
-        font.setFamily("Helvetica")
-        font.setPointSize(11)
+        font.setFamily("Lato")
+        font.setPointSize(10)
         font.setBold(False)
         font.setItalic(False)
         font.setWeight(50)
@@ -908,7 +909,7 @@ class Ui_MainWindow(object):
         self.gridLayout_39.setObjectName("gridLayout_39")
         self.sun_note_one = QtWidgets.QTextEdit(parent=self.sunday)
         font = QtGui.QFont()
-        font.setFamily("Helvetica")
+        font.setFamily("Lato")
         font.setPointSize(13)
         font.setBold(False)
         font.setItalic(False)
@@ -980,7 +981,7 @@ class Ui_MainWindow(object):
         self.gridLayout_49.setObjectName("gridLayout_49")
         self.fri_note_one = QtWidgets.QTextEdit(parent=self.friday)
         font = QtGui.QFont()
-        font.setFamily("Helvetica")
+        font.setFamily("Lato")
         font.setPointSize(13)
         font.setBold(False)
         font.setItalic(False)
@@ -1126,7 +1127,7 @@ class Ui_MainWindow(object):
         self.gridLayout_51.setObjectName("gridLayout_51")
         self.sat_date = QtWidgets.QDateEdit(parent=self.week_frame)
         font = QtGui.QFont()
-        font.setFamily("Helvetica")
+        font.setFamily("Lato")
         font.setPointSize(10)
         font.setBold(False)
         font.setItalic(False)
@@ -1149,7 +1150,7 @@ class Ui_MainWindow(object):
         self.gridLayout_51.addWidget(self.thurs_journal_nav_btn, 0, 5, 1, 1)
         self.sun_date = QtWidgets.QDateEdit(parent=self.week_frame)
         font = QtGui.QFont()
-        font.setFamily("Helvetica")
+        font.setFamily("Lato")
         font.setPointSize(10)
         font.setBold(False)
         font.setItalic(False)
@@ -1174,7 +1175,7 @@ class Ui_MainWindow(object):
         self.gridLayout_51.addWidget(self.sun_journal_nav_btn, 0, 1, 1, 1)
         self.fri_date = QtWidgets.QDateEdit(parent=self.week_frame)
         font = QtGui.QFont()
-        font.setFamily("Helvetica")
+        font.setFamily("Lato")
         font.setPointSize(10)
         font.setBold(False)
         font.setItalic(False)
@@ -1189,7 +1190,7 @@ class Ui_MainWindow(object):
         self.gridLayout_51.addWidget(self.fri_date, 1, 6, 1, 1)
         self.tues_date = QtWidgets.QDateEdit(parent=self.week_frame)
         font = QtGui.QFont()
-        font.setFamily("Helvetica")
+        font.setFamily("Lato")
         font.setPointSize(10)
         font.setBold(False)
         font.setItalic(False)
@@ -1204,7 +1205,7 @@ class Ui_MainWindow(object):
         self.gridLayout_51.addWidget(self.tues_date, 1, 3, 1, 1)
         self.thurs_date = QtWidgets.QDateEdit(parent=self.week_frame)
         font = QtGui.QFont()
-        font.setFamily("Helvetica")
+        font.setFamily("Lato")
         font.setPointSize(10)
         font.setBold(False)
         font.setItalic(False)
@@ -1228,7 +1229,7 @@ class Ui_MainWindow(object):
         self.gridLayout_51.addWidget(self.sat_journal_nav_btn, 0, 7, 1, 1)
         self.mon_date = QtWidgets.QDateEdit(parent=self.week_frame)
         font = QtGui.QFont()
-        font.setFamily("Helvetica")
+        font.setFamily("Lato")
         font.setPointSize(10)
         font.setBold(False)
         font.setItalic(False)
@@ -1279,7 +1280,7 @@ class Ui_MainWindow(object):
         self.gridLayout_51.addItem(spacerItem1, 0, 8, 2, 1)
         self.wed_date = QtWidgets.QDateEdit(parent=self.week_frame)
         font = QtGui.QFont()
-        font.setFamily("Helvetica")
+        font.setFamily("Lato")
         font.setPointSize(10)
         font.setBold(False)
         font.setItalic(False)
@@ -1654,7 +1655,7 @@ class Ui_MainWindow(object):
         self.woke_like_lbl.setObjectName("woke_like_lbl")
         self.gridLayout_9.addWidget(self.woke_like_lbl, 5, 0, 1, 1)
         self.sleep_quality_slider = QtWidgets.QSlider(parent=self.frame_3)
-        self.sleep_quality_slider.setMinimumSize(QtCore.QSize(0, 17))
+        self.sleep_quality_slider.setMinimumSize(QtCore.QSize(0, 18))
         self.sleep_quality_slider.setStyleSheet("\n"
 "    /* ///////////////////////////////////////////////////////////////\n"
 "    QSlider Colors\n"
@@ -1704,7 +1705,7 @@ class Ui_MainWindow(object):
         self.sleep_quality.setObjectName("sleep_quality")
         self.gridLayout_9.addWidget(self.sleep_quality, 4, 1, 1, 1)
         self.woke_up_like_slider = QtWidgets.QSlider(parent=self.frame_3)
-        self.woke_up_like_slider.setMinimumSize(QtCore.QSize(0, 17))
+        self.woke_up_like_slider.setMinimumSize(QtCore.QSize(0, 18))
         self.woke_up_like_slider.setStyleSheet("\n"
 "    /* ///////////////////////////////////////////////////////////////\n"
 "    QSlider Colors\n"
@@ -2075,7 +2076,9 @@ class Ui_MainWindow(object):
         self.gridLayout_40 = QtWidgets.QGridLayout(self.lilys_mod)
         self.gridLayout_40.setObjectName("gridLayout_40")
         spacerItem13 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Policy.Minimum, QtWidgets.QSizePolicy.Policy.Expanding)
-        self.gridLayout_40.addItem(spacerItem13, 2, 0, 1, 1)
+        self.gridLayout_40.addItem(spacerItem13, 0, 0, 1, 1)
+        spacerItem14 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Policy.Minimum, QtWidgets.QSizePolicy.Policy.Expanding)
+        self.gridLayout_40.addItem(spacerItem14, 2, 0, 1, 1)
         self.lilyStack = QtWidgets.QFrame(parent=self.lilys_mod)
         self.lilyStack.setObjectName("lilyStack")
         self.gridLayout_22 = QtWidgets.QGridLayout(self.lilyStack)
@@ -2088,17 +2091,17 @@ class Ui_MainWindow(object):
         self.horizontalLayout_3.setContentsMargins(0, 0, 0, 0)
         self.horizontalLayout_3.setSpacing(0)
         self.horizontalLayout_3.setObjectName("horizontalLayout_3")
-        spacerItem14 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Minimum)
-        self.horizontalLayout_3.addItem(spacerItem14)
+        spacerItem15 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Minimum)
+        self.horizontalLayout_3.addItem(spacerItem15)
         self.lily_walk_btn = QtWidgets.QPushButton(parent=self.button_catcher_frame)
         self.lily_walk_btn.setStyleSheet("\n"
 "QPushButton {\n"
 "border:none;\n"
 "image: url(:/newPrefix/lily_walk_norm.png);\n"
-"max-width:30px;\n"
-"min-width:30px;\n"
-"max-height:30px;\n"
-"min-height:30px;\n"
+"max-width:38px;\n"
+"min-width:38px;\n"
+"max-height:38px;\n"
+"min-height:38px;\n"
 "}\n"
 "\n"
 "QPushButton:hover {\n"
@@ -2106,7 +2109,7 @@ class Ui_MainWindow(object):
 "}\n"
 "\n"
 "QPushButton:pressed {\n"
-"image: url(:/newPrefix/lily_walk_checked_one.png);\n"
+"image: url(:/newPrefix/lilyWalkClicked.png);\n"
 "}\n"
 "\n"
 "\n"
@@ -2116,17 +2119,17 @@ class Ui_MainWindow(object):
         self.lily_walk_btn.setCheckable(False)
         self.lily_walk_btn.setObjectName("lily_walk_btn")
         self.horizontalLayout_3.addWidget(self.lily_walk_btn)
-        spacerItem15 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Minimum)
-        self.horizontalLayout_3.addItem(spacerItem15)
+        spacerItem16 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Minimum)
+        self.horizontalLayout_3.addItem(spacerItem16)
         self.lily_ate_check = QtWidgets.QPushButton(parent=self.button_catcher_frame)
         self.lily_ate_check.setStyleSheet("\n"
 "QPushButton {\n"
 "border:none;\n"
 "image: url(:/newPrefix/lilyasdfas.png);\n"
-"max-width:30px;\n"
-"min-width:30px;\n"
-"max-height:30px;\n"
-"min-height:30px;\n"
+"max-width:38px;\n"
+"min-width:38px;\n"
+"max-height:38px;\n"
+"min-height:38px;\n"
 "}\n"
 "\n"
 "QPushButton:hover {\n"
@@ -2134,7 +2137,7 @@ class Ui_MainWindow(object):
 "}\n"
 "\n"
 "QPushButton:pressed {\n"
-"image: url(:/newPrefix/lilydietchecked.png);\n"
+"image: url(:/newPrefix/Mac App icon 46.png);\n"
 "}\n"
 "\n"
 "\n"
@@ -2145,8 +2148,8 @@ class Ui_MainWindow(object):
         self.lily_ate_check.setFlat(True)
         self.lily_ate_check.setObjectName("lily_ate_check")
         self.horizontalLayout_3.addWidget(self.lily_ate_check)
-        spacerItem16 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Minimum)
-        self.horizontalLayout_3.addItem(spacerItem16)
+        spacerItem17 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Minimum)
+        self.horizontalLayout_3.addItem(spacerItem17)
         self.gridLayout_22.addWidget(self.button_catcher_frame, 0, 0, 1, 1)
         self.walk_mood_rate_frame = QtWidgets.QFrame(parent=self.lilyStack)
         self.walk_mood_rate_frame.setObjectName("walk_mood_rate_frame")
@@ -2162,40 +2165,7 @@ class Ui_MainWindow(object):
         self.lily_behavior.setMinimum(0)
         self.lily_behavior.setMaximum(100)
         self.lily_behavior.setObjectName("lily_behavior")
-        self.gridLayout_33.addWidget(self.lily_behavior, 1, 2, 1, 1)
-        self.lily_gait = QtWidgets.QSpinBox(parent=self.walk_mood_rate_frame)
-        self.lily_gait.setFrame(False)
-        self.lily_gait.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
-        self.lily_gait.setButtonSymbols(QtWidgets.QAbstractSpinBox.ButtonSymbols.NoButtons)
-        self.lily_gait.setSuffix("")
-        self.lily_gait.setMinimum(0)
-        self.lily_gait.setMaximum(100)
-        self.lily_gait.setObjectName("lily_gait")
-        self.gridLayout_33.addWidget(self.lily_gait, 2, 2, 1, 1)
-        self.na_45 = QtWidgets.QLabel(parent=self.walk_mood_rate_frame)
-        self.na_45.setStyleSheet("QLabel {\n"
-"background:transparent;\n"
-"font-weight:bold;\n"
-"color:rgb(144,114,144);\n"
-"}\n"
-"QLabel:hover {\n"
-"color:rgb(174,144,174);\n"
-"}")
-        self.na_45.setObjectName("na_45")
-        self.gridLayout_33.addWidget(self.na_45, 2, 0, 1, 2)
-        self.na_42 = QtWidgets.QLabel(parent=self.walk_mood_rate_frame)
-        self.na_42.setStyleSheet("\n"
-"\n"
-"QLabel {\n"
-"font-weight:bold;\n"
-"color:rgb(205,178,214);\n"
-"}\n"
-"QLabel:hover {\n"
-"color: rgb(250,223,255);\n"
-"}\n"
-"    ")
-        self.na_42.setObjectName("na_42")
-        self.gridLayout_33.addWidget(self.na_42, 1, 0, 1, 1)
+        self.gridLayout_33.addWidget(self.lily_behavior, 1, 1, 1, 1)
         self.lily_behavior_slider = QtWidgets.QSlider(parent=self.walk_mood_rate_frame)
         self.lily_behavior_slider.setStyleSheet("QSlider::handle:horizontal {\n"
 "    background:rgb(205,178,214);\n"
@@ -2214,7 +2184,87 @@ class Ui_MainWindow(object):
         self.lily_behavior_slider.setOrientation(QtCore.Qt.Orientation.Horizontal)
         self.lily_behavior_slider.setTickPosition(QtWidgets.QSlider.TickPosition.NoTicks)
         self.lily_behavior_slider.setObjectName("lily_behavior_slider")
-        self.gridLayout_33.addWidget(self.lily_behavior_slider, 1, 3, 1, 1)
+        self.gridLayout_33.addWidget(self.lily_behavior_slider, 1, 2, 1, 4)
+        self.lily_walk_note = QtWidgets.QLineEdit(parent=self.walk_mood_rate_frame)
+        self.lily_walk_note.setStyleSheet("\n"
+"/* //////////////////////////////////////////////////////////////////////////////////////////\n"
+"QComboBox Style Default\n"
+"////////////////////////////////////////////////////////////////////////////////////////// */\n"
+"QLineEdit {    font-size:11pt;\n"
+"    border:none;\n"
+"    color:rgb(160,130,160);\n"
+"}\n"
+"\n"
+"QLineEdit:hover {\n"
+"    color: rgb(200,170,200);\n"
+"}\n"
+"\n"
+"QLineEdit:focus {\n"
+"    color: rgb(180,150,180);\n"
+"}\n"
+"    ")
+        self.lily_walk_note.setFrame(False)
+        self.lily_walk_note.setClearButtonEnabled(False)
+        self.lily_walk_note.setObjectName("lily_walk_note")
+        self.gridLayout_33.addWidget(self.lily_walk_note, 5, 0, 1, 5)
+        self.lily_walk_note_commit_btn = QtWidgets.QPushButton(parent=self.walk_mood_rate_frame)
+        self.lily_walk_note_commit_btn.setStyleSheet("QPushButton {\n"
+"border:none;\n"
+"image: url(:/newPrefix/lily_walk_norm.png);\n"
+"max-width:15px;\n"
+"min-width:15px;\n"
+"max-height:15px;\n"
+"min-height:15px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"image: url(:/newPrefix/lily_walk_one_hover.png);\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"image: url(:/newPrefix/lily_walk_checked_one.png);\n"
+"}\n"
+"\n"
+"\n"
+"")
+        self.lily_walk_note_commit_btn.setText("")
+        self.lily_walk_note_commit_btn.setIconSize(QtCore.QSize(22, 22))
+        self.lily_walk_note_commit_btn.setCheckable(False)
+        self.lily_walk_note_commit_btn.setObjectName("lily_walk_note_commit_btn")
+        self.gridLayout_33.addWidget(self.lily_walk_note_commit_btn, 5, 5, 1, 1)
+        self.na_42 = QtWidgets.QLabel(parent=self.walk_mood_rate_frame)
+        self.na_42.setStyleSheet("\n"
+"\n"
+"QLabel {\n"
+"font-weight:bold;\n"
+"color:rgb(205,178,214);\n"
+"}\n"
+"QLabel:hover {\n"
+"color: rgb(250,223,255);\n"
+"}\n"
+"    ")
+        self.na_42.setObjectName("na_42")
+        self.gridLayout_33.addWidget(self.na_42, 1, 0, 1, 1)
+        self.na_45 = QtWidgets.QLabel(parent=self.walk_mood_rate_frame)
+        self.na_45.setStyleSheet("QLabel {\n"
+"background:transparent;\n"
+"font-weight:bold;\n"
+"color:rgb(144,114,144);\n"
+"}\n"
+"QLabel:hover {\n"
+"color:rgb(174,144,174);\n"
+"}")
+        self.na_45.setObjectName("na_45")
+        self.gridLayout_33.addWidget(self.na_45, 3, 0, 1, 1)
+        self.lily_gait = QtWidgets.QSpinBox(parent=self.walk_mood_rate_frame)
+        self.lily_gait.setFrame(False)
+        self.lily_gait.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
+        self.lily_gait.setButtonSymbols(QtWidgets.QAbstractSpinBox.ButtonSymbols.NoButtons)
+        self.lily_gait.setSuffix("")
+        self.lily_gait.setMinimum(0)
+        self.lily_gait.setMaximum(100)
+        self.lily_gait.setObjectName("lily_gait")
+        self.gridLayout_33.addWidget(self.lily_gait, 3, 1, 1, 1)
         self.lily_gait_slider = QtWidgets.QSlider(parent=self.walk_mood_rate_frame)
         self.lily_gait_slider.setStyleSheet("\n"
 "/* ///////////////////////////////////////////////////////////////\n"
@@ -2231,7 +2281,7 @@ class Ui_MainWindow(object):
         self.lily_gait_slider.setOrientation(QtCore.Qt.Orientation.Horizontal)
         self.lily_gait_slider.setTickPosition(QtWidgets.QSlider.TickPosition.NoTicks)
         self.lily_gait_slider.setObjectName("lily_gait_slider")
-        self.gridLayout_33.addWidget(self.lily_gait_slider, 2, 3, 1, 1)
+        self.gridLayout_33.addWidget(self.lily_gait_slider, 3, 2, 1, 4)
         self.gridLayout_22.addWidget(self.walk_mood_rate_frame, 1, 0, 1, 1)
         self.lily_diet_mood_input_container = QtWidgets.QFrame(parent=self.lilyStack)
         self.lily_diet_mood_input_container.setObjectName("lily_diet_mood_input_container")
@@ -2239,6 +2289,116 @@ class Ui_MainWindow(object):
         self.gridLayout_23.setContentsMargins(0, 0, 0, 6)
         self.gridLayout_23.setSpacing(6)
         self.gridLayout_23.setObjectName("gridLayout_23")
+        self.na_46 = QtWidgets.QLabel(parent=self.lily_diet_mood_input_container)
+        self.na_46.setMaximumSize(QtCore.QSize(100, 16777215))
+        self.na_46.setStyleSheet("QLabel {\n"
+"font-weight:bold;\n"
+"background:transparent;\n"
+"color:rgb(160,130,160);\n"
+"}\n"
+"QLabel:hover {\n"
+"color: rgb(210,180,210);\n"
+"}\n"
+" ")
+        self.na_46.setObjectName("na_46")
+        self.gridLayout_23.addWidget(self.na_46, 9, 0, 1, 1)
+        self.lily_mood_slider = QtWidgets.QSlider(parent=self.lily_diet_mood_input_container)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.Preferred, QtWidgets.QSizePolicy.Policy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.lily_mood_slider.sizePolicy().hasHeightForWidth())
+        self.lily_mood_slider.setSizePolicy(sizePolicy)
+        self.lily_mood_slider.setStyleSheet("")
+        self.lily_mood_slider.setMinimum(0)
+        self.lily_mood_slider.setMaximum(10)
+        self.lily_mood_slider.setOrientation(QtCore.Qt.Orientation.Horizontal)
+        self.lily_mood_slider.setTickPosition(QtWidgets.QSlider.TickPosition.NoTicks)
+        self.lily_mood_slider.setObjectName("lily_mood_slider")
+        self.gridLayout_23.addWidget(self.lily_mood_slider, 9, 2, 1, 2)
+        self.na_43 = QtWidgets.QLabel(parent=self.lily_diet_mood_input_container)
+        self.na_43.setMaximumSize(QtCore.QSize(100, 16777215))
+        self.na_43.setStyleSheet("QLabel {\n"
+"font-weight:bold;\n"
+"background:transparent;\n"
+"color:rgb(130,100,130);\n"
+"}\n"
+"QLabel:hover {\n"
+"color: rgb(180,160,180);\n"
+"}\n"
+"    ")
+        self.na_43.setObjectName("na_43")
+        self.gridLayout_23.addWidget(self.na_43, 10, 0, 1, 1)
+        self.lily_time_in_room_slider = QtWidgets.QSlider(parent=self.lily_diet_mood_input_container)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.Preferred, QtWidgets.QSizePolicy.Policy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.lily_time_in_room_slider.sizePolicy().hasHeightForWidth())
+        self.lily_time_in_room_slider.setSizePolicy(sizePolicy)
+        self.lily_time_in_room_slider.setStyleSheet("")
+        self.lily_time_in_room_slider.setMinimum(0)
+        self.lily_time_in_room_slider.setMaximum(100)
+        self.lily_time_in_room_slider.setOrientation(QtCore.Qt.Orientation.Horizontal)
+        self.lily_time_in_room_slider.setTickPosition(QtWidgets.QSlider.TickPosition.NoTicks)
+        self.lily_time_in_room_slider.setObjectName("lily_time_in_room_slider")
+        self.gridLayout_23.addWidget(self.lily_time_in_room_slider, 8, 2, 1, 2)
+        self.lily_energy = QtWidgets.QSpinBox(parent=self.lily_diet_mood_input_container)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.Preferred, QtWidgets.QSizePolicy.Policy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.lily_energy.sizePolicy().hasHeightForWidth())
+        self.lily_energy.setSizePolicy(sizePolicy)
+        self.lily_energy.setMaximumSize(QtCore.QSize(35, 16777215))
+        self.lily_energy.setStyleSheet("")
+        self.lily_energy.setFrame(False)
+        self.lily_energy.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
+        self.lily_energy.setReadOnly(False)
+        self.lily_energy.setButtonSymbols(QtWidgets.QAbstractSpinBox.ButtonSymbols.NoButtons)
+        self.lily_energy.setMinimum(-10)
+        self.lily_energy.setMaximum(10)
+        self.lily_energy.setObjectName("lily_energy")
+        self.gridLayout_23.addWidget(self.lily_energy, 11, 1, 1, 1)
+        self.lily_energy_slider = QtWidgets.QSlider(parent=self.lily_diet_mood_input_container)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.Preferred, QtWidgets.QSizePolicy.Policy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.lily_energy_slider.sizePolicy().hasHeightForWidth())
+        self.lily_energy_slider.setSizePolicy(sizePolicy)
+        self.lily_energy_slider.setStyleSheet("")
+        self.lily_energy_slider.setMinimum(0)
+        self.lily_energy_slider.setMaximum(10)
+        self.lily_energy_slider.setOrientation(QtCore.Qt.Orientation.Horizontal)
+        self.lily_energy_slider.setTickPosition(QtWidgets.QSlider.TickPosition.NoTicks)
+        self.lily_energy_slider.setObjectName("lily_energy_slider")
+        self.gridLayout_23.addWidget(self.lily_energy_slider, 11, 2, 1, 2)
+        self.lily_activity = QtWidgets.QSpinBox(parent=self.lily_diet_mood_input_container)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.Preferred, QtWidgets.QSizePolicy.Policy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.lily_activity.sizePolicy().hasHeightForWidth())
+        self.lily_activity.setSizePolicy(sizePolicy)
+        self.lily_activity.setMaximumSize(QtCore.QSize(35, 16777215))
+        self.lily_activity.setStyleSheet("")
+        self.lily_activity.setFrame(False)
+        self.lily_activity.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
+        self.lily_activity.setReadOnly(False)
+        self.lily_activity.setButtonSymbols(QtWidgets.QAbstractSpinBox.ButtonSymbols.NoButtons)
+        self.lily_activity.setMinimum(-10)
+        self.lily_activity.setMaximum(10)
+        self.lily_activity.setObjectName("lily_activity")
+        self.gridLayout_23.addWidget(self.lily_activity, 10, 1, 1, 1)
+        self.na_41 = QtWidgets.QLabel(parent=self.lily_diet_mood_input_container)
+        self.na_41.setStyleSheet("\n"
+"\n"
+"QLabel {\n"
+"font-weight:bold;\n"
+"color:rgb(205,178,214);\n"
+"}\n"
+"QLabel:hover {\n"
+"color: rgb(250,223,255);\n"
+"}\n"
+"    ")
+        self.na_41.setObjectName("na_41")
+        self.gridLayout_23.addWidget(self.na_41, 8, 0, 1, 1)
         self.lily_diet_frame = QtWidgets.QFrame(parent=self.lily_diet_mood_input_container)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.Minimum, QtWidgets.QSizePolicy.Policy.Fixed)
         sizePolicy.setHorizontalStretch(0)
@@ -2267,91 +2427,6 @@ class Ui_MainWindow(object):
         self.lily_mood.setMaximum(10)
         self.lily_mood.setObjectName("lily_mood")
         self.gridLayout_23.addWidget(self.lily_mood, 9, 1, 1, 1)
-        self.lily_energy = QtWidgets.QSpinBox(parent=self.lily_diet_mood_input_container)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.Preferred, QtWidgets.QSizePolicy.Policy.Preferred)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.lily_energy.sizePolicy().hasHeightForWidth())
-        self.lily_energy.setSizePolicy(sizePolicy)
-        self.lily_energy.setMaximumSize(QtCore.QSize(35, 16777215))
-        self.lily_energy.setStyleSheet("")
-        self.lily_energy.setFrame(False)
-        self.lily_energy.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
-        self.lily_energy.setReadOnly(False)
-        self.lily_energy.setButtonSymbols(QtWidgets.QAbstractSpinBox.ButtonSymbols.NoButtons)
-        self.lily_energy.setMinimum(-10)
-        self.lily_energy.setMaximum(10)
-        self.lily_energy.setObjectName("lily_energy")
-        self.gridLayout_23.addWidget(self.lily_energy, 11, 1, 1, 1)
-        self.lily_mood_activity_slider = QtWidgets.QSlider(parent=self.lily_diet_mood_input_container)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.Preferred, QtWidgets.QSizePolicy.Policy.Preferred)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.lily_mood_activity_slider.sizePolicy().hasHeightForWidth())
-        self.lily_mood_activity_slider.setSizePolicy(sizePolicy)
-        self.lily_mood_activity_slider.setCursor(QtGui.QCursor(QtCore.Qt.CursorShape.ArrowCursor))
-        self.lily_mood_activity_slider.setStyleSheet("")
-        self.lily_mood_activity_slider.setMinimum(0)
-        self.lily_mood_activity_slider.setMaximum(10)
-        self.lily_mood_activity_slider.setOrientation(QtCore.Qt.Orientation.Horizontal)
-        self.lily_mood_activity_slider.setTickPosition(QtWidgets.QSlider.TickPosition.NoTicks)
-        self.lily_mood_activity_slider.setObjectName("lily_mood_activity_slider")
-        self.gridLayout_23.addWidget(self.lily_mood_activity_slider, 10, 2, 1, 2)
-        self.lily_energy_slider = QtWidgets.QSlider(parent=self.lily_diet_mood_input_container)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.Preferred, QtWidgets.QSizePolicy.Policy.Preferred)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.lily_energy_slider.sizePolicy().hasHeightForWidth())
-        self.lily_energy_slider.setSizePolicy(sizePolicy)
-        self.lily_energy_slider.setStyleSheet("")
-        self.lily_energy_slider.setMinimum(0)
-        self.lily_energy_slider.setMaximum(10)
-        self.lily_energy_slider.setOrientation(QtCore.Qt.Orientation.Horizontal)
-        self.lily_energy_slider.setTickPosition(QtWidgets.QSlider.TickPosition.NoTicks)
-        self.lily_energy_slider.setObjectName("lily_energy_slider")
-        self.gridLayout_23.addWidget(self.lily_energy_slider, 11, 2, 1, 2)
-        self.lily_mood_slider = QtWidgets.QSlider(parent=self.lily_diet_mood_input_container)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.Preferred, QtWidgets.QSizePolicy.Policy.Preferred)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.lily_mood_slider.sizePolicy().hasHeightForWidth())
-        self.lily_mood_slider.setSizePolicy(sizePolicy)
-        self.lily_mood_slider.setStyleSheet("")
-        self.lily_mood_slider.setMinimum(0)
-        self.lily_mood_slider.setMaximum(10)
-        self.lily_mood_slider.setOrientation(QtCore.Qt.Orientation.Horizontal)
-        self.lily_mood_slider.setTickPosition(QtWidgets.QSlider.TickPosition.NoTicks)
-        self.lily_mood_slider.setObjectName("lily_mood_slider")
-        self.gridLayout_23.addWidget(self.lily_mood_slider, 9, 2, 1, 2)
-        self.lily_activity = QtWidgets.QSpinBox(parent=self.lily_diet_mood_input_container)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.Preferred, QtWidgets.QSizePolicy.Policy.Preferred)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.lily_activity.sizePolicy().hasHeightForWidth())
-        self.lily_activity.setSizePolicy(sizePolicy)
-        self.lily_activity.setMaximumSize(QtCore.QSize(35, 16777215))
-        self.lily_activity.setStyleSheet("")
-        self.lily_activity.setFrame(False)
-        self.lily_activity.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
-        self.lily_activity.setReadOnly(False)
-        self.lily_activity.setButtonSymbols(QtWidgets.QAbstractSpinBox.ButtonSymbols.NoButtons)
-        self.lily_activity.setMinimum(-10)
-        self.lily_activity.setMaximum(10)
-        self.lily_activity.setObjectName("lily_activity")
-        self.gridLayout_23.addWidget(self.lily_activity, 10, 1, 1, 1)
-        self.lily_time_in_room_slider = QtWidgets.QSlider(parent=self.lily_diet_mood_input_container)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.Preferred, QtWidgets.QSizePolicy.Policy.Preferred)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.lily_time_in_room_slider.sizePolicy().hasHeightForWidth())
-        self.lily_time_in_room_slider.setSizePolicy(sizePolicy)
-        self.lily_time_in_room_slider.setStyleSheet("")
-        self.lily_time_in_room_slider.setMinimum(0)
-        self.lily_time_in_room_slider.setMaximum(100)
-        self.lily_time_in_room_slider.setOrientation(QtCore.Qt.Orientation.Horizontal)
-        self.lily_time_in_room_slider.setTickPosition(QtWidgets.QSlider.TickPosition.NoTicks)
-        self.lily_time_in_room_slider.setObjectName("lily_time_in_room_slider")
-        self.gridLayout_23.addWidget(self.lily_time_in_room_slider, 8, 2, 1, 2)
         self.na_44 = QtWidgets.QLabel(parent=self.lily_diet_mood_input_container)
         self.na_44.setMaximumSize(QtCore.QSize(100, 16777215))
         self.na_44.setStyleSheet("QLabel {\n"
@@ -2365,70 +2440,6 @@ class Ui_MainWindow(object):
 "    ")
         self.na_44.setObjectName("na_44")
         self.gridLayout_23.addWidget(self.na_44, 11, 0, 1, 1)
-        self.lily_walk_note_commit_btn = QtWidgets.QPushButton(parent=self.lily_diet_mood_input_container)
-        self.lily_walk_note_commit_btn.setStyleSheet("QPushButton {\n"
-"border:none;\n"
-"image: url(:/newPrefix/lily_walk_norm.png);\n"
-"max-width:15px;\n"
-"min-width:15px;\n"
-"max-height:15px;\n"
-"min-height:15px;\n"
-"}\n"
-"\n"
-"QPushButton:hover {\n"
-"image: url(:/newPrefix/lily_walk_one_hover.png);\n"
-"}\n"
-"\n"
-"QPushButton:pressed {\n"
-"image: url(:/newPrefix/lily_walk_checked_one.png);\n"
-"}\n"
-"\n"
-"\n"
-"")
-        self.lily_walk_note_commit_btn.setText("")
-        self.lily_walk_note_commit_btn.setIconSize(QtCore.QSize(22, 22))
-        self.lily_walk_note_commit_btn.setCheckable(False)
-        self.lily_walk_note_commit_btn.setObjectName("lily_walk_note_commit_btn")
-        self.gridLayout_23.addWidget(self.lily_walk_note_commit_btn, 0, 3, 1, 1)
-        self.na_43 = QtWidgets.QLabel(parent=self.lily_diet_mood_input_container)
-        self.na_43.setMaximumSize(QtCore.QSize(100, 16777215))
-        self.na_43.setStyleSheet("QLabel {\n"
-"font-weight:bold;\n"
-"background:transparent;\n"
-"color:rgb(130,100,130);\n"
-"}\n"
-"QLabel:hover {\n"
-"color: rgb(180,160,180);\n"
-"}\n"
-"    ")
-        self.na_43.setObjectName("na_43")
-        self.gridLayout_23.addWidget(self.na_43, 10, 0, 1, 1)
-        self.na_41 = QtWidgets.QLabel(parent=self.lily_diet_mood_input_container)
-        self.na_41.setStyleSheet("\n"
-"\n"
-"QLabel {\n"
-"font-weight:bold;\n"
-"color:rgb(205,178,214);\n"
-"}\n"
-"QLabel:hover {\n"
-"color: rgb(250,223,255);\n"
-"}\n"
-"    ")
-        self.na_41.setObjectName("na_41")
-        self.gridLayout_23.addWidget(self.na_41, 8, 0, 1, 1)
-        self.na_46 = QtWidgets.QLabel(parent=self.lily_diet_mood_input_container)
-        self.na_46.setMaximumSize(QtCore.QSize(100, 16777215))
-        self.na_46.setStyleSheet("QLabel {\n"
-"font-weight:bold;\n"
-"background:transparent;\n"
-"color:rgb(160,130,160);\n"
-"}\n"
-"QLabel:hover {\n"
-"color: rgb(210,180,210);\n"
-"}\n"
-" ")
-        self.na_46.setObjectName("na_46")
-        self.gridLayout_23.addWidget(self.na_46, 9, 0, 1, 1)
         self.lily_time_in_room = QtWidgets.QSpinBox(parent=self.lily_diet_mood_input_container)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.Preferred, QtWidgets.QSizePolicy.Policy.Preferred)
         sizePolicy.setHorizontalStretch(0)
@@ -2445,28 +2456,20 @@ class Ui_MainWindow(object):
         self.lily_time_in_room.setMaximum(100)
         self.lily_time_in_room.setObjectName("lily_time_in_room")
         self.gridLayout_23.addWidget(self.lily_time_in_room, 8, 1, 1, 1)
-        self.lily_walk_note = QtWidgets.QLineEdit(parent=self.lily_diet_mood_input_container)
-        self.lily_walk_note.setStyleSheet("\n"
-"/* //////////////////////////////////////////////////////////////////////////////////////////\n"
-"QComboBox Style Default\n"
-"////////////////////////////////////////////////////////////////////////////////////////// */\n"
-"QLineEdit {    font-size:11pt;\n"
-"    border:none;\n"
-"    color:rgb(160,130,160);\n"
-"}\n"
-"\n"
-"QLineEdit:hover {\n"
-"    color: rgb(200,170,200);\n"
-"}\n"
-"\n"
-"QLineEdit:focus {\n"
-"    color: rgb(180,150,180);\n"
-"}\n"
-"    ")
-        self.lily_walk_note.setFrame(False)
-        self.lily_walk_note.setClearButtonEnabled(False)
-        self.lily_walk_note.setObjectName("lily_walk_note")
-        self.gridLayout_23.addWidget(self.lily_walk_note, 0, 0, 1, 3)
+        self.lily_mood_activity_slider = QtWidgets.QSlider(parent=self.lily_diet_mood_input_container)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.Preferred, QtWidgets.QSizePolicy.Policy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.lily_mood_activity_slider.sizePolicy().hasHeightForWidth())
+        self.lily_mood_activity_slider.setSizePolicy(sizePolicy)
+        self.lily_mood_activity_slider.setCursor(QtGui.QCursor(QtCore.Qt.CursorShape.ArrowCursor))
+        self.lily_mood_activity_slider.setStyleSheet("")
+        self.lily_mood_activity_slider.setMinimum(0)
+        self.lily_mood_activity_slider.setMaximum(10)
+        self.lily_mood_activity_slider.setOrientation(QtCore.Qt.Orientation.Horizontal)
+        self.lily_mood_activity_slider.setTickPosition(QtWidgets.QSlider.TickPosition.NoTicks)
+        self.lily_mood_activity_slider.setObjectName("lily_mood_activity_slider")
+        self.gridLayout_23.addWidget(self.lily_mood_activity_slider, 10, 2, 1, 2)
         self.gridLayout_22.addWidget(self.lily_diet_mood_input_container, 2, 0, 1, 1)
         self.lily_notes = QtWidgets.QTextEdit(parent=self.lilyStack)
         self.lily_notes.setStyleSheet("\n"
@@ -2516,8 +2519,6 @@ class Ui_MainWindow(object):
         self.lily_note_commit_btn.setObjectName("lily_note_commit_btn")
         self.gridLayout_22.addWidget(self.lily_note_commit_btn, 5, 0, 1, 1, QtCore.Qt.AlignmentFlag.AlignHCenter)
         self.gridLayout_40.addWidget(self.lilyStack, 1, 0, 1, 1)
-        spacerItem17 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Policy.Minimum, QtWidgets.QSizePolicy.Policy.Expanding)
-        self.gridLayout_40.addItem(spacerItem17, 0, 0, 1, 1)
         self.mainStack.addWidget(self.lilys_mod)
         self.mentalpage = QtWidgets.QWidget()
         self.mentalpage.setObjectName("mentalpage")
@@ -3720,7 +3721,6 @@ class Ui_MainWindow(object):
         self.gridLayout_34.setSpacing(0)
         self.gridLayout_34.setObjectName("gridLayout_34")
         self.lily_walk_table = QtWidgets.QTableView(parent=self.frame_36)
-        self.lily_walk_table.setStyleSheet("")
         self.lily_walk_table.setShowGrid(False)
         self.lily_walk_table.setSortingEnabled(True)
         self.lily_walk_table.setCornerButtonEnabled(False)
@@ -3734,7 +3734,6 @@ class Ui_MainWindow(object):
         self.lily_walk_table.verticalHeader().setSortIndicatorShown(True)
         self.gridLayout_34.addWidget(self.lily_walk_table, 1, 0, 1, 1)
         self.lily_walk_note_table = QtWidgets.QTableView(parent=self.frame_36)
-        self.lily_walk_note_table.setStyleSheet("")
         self.lily_walk_note_table.setShowGrid(False)
         self.lily_walk_note_table.setSortingEnabled(True)
         self.lily_walk_note_table.setObjectName("lily_walk_note_table")
@@ -3792,6 +3791,7 @@ class Ui_MainWindow(object):
         self.gridLayout_36.setSpacing(0)
         self.gridLayout_36.setObjectName("gridLayout_36")
         self.lily_diet_table = QtWidgets.QTableView(parent=self.frame_38)
+        self.lily_diet_table.setStyleSheet("")
         self.lily_diet_table.setShowGrid(False)
         self.lily_diet_table.setSortingEnabled(True)
         self.lily_diet_table.setObjectName("lily_diet_table")
@@ -3844,6 +3844,7 @@ class Ui_MainWindow(object):
         self.gridLayout_38.setSpacing(0)
         self.gridLayout_38.setObjectName("gridLayout_38")
         self.time_in_room_table = QtWidgets.QTableView(parent=self.lily_data_stackPage4)
+        self.time_in_room_table.setStyleSheet("")
         self.time_in_room_table.setShowGrid(False)
         self.time_in_room_table.setSortingEnabled(True)
         self.time_in_room_table.setObjectName("time_in_room_table")
@@ -3930,8 +3931,8 @@ class Ui_MainWindow(object):
 "     background:rgb(198,78,78);\n"
 " }\n"
 " QTableView::item:selected {\n"
-"     color: #fff;\n"
-"     background:rgb(23, 23, 23);\n"
+"     color:#fff;\n"
+"     background:rgb(198,78,78);\n"
 " }\n"
 " ")
         self.mdmmr_tableview.setShowGrid(False)
@@ -3973,7 +3974,7 @@ class Ui_MainWindow(object):
 " }\n"
 " QTableView::item:selected {\n"
 "     color: #fff;\n"
-"     background:rgb(23, 23, 23);\n"
+"      background:rgb(91, 147, 188);\n"
 " }\n"
 " ")
         self.wefe_tableview.setShowGrid(False)
@@ -4003,7 +4004,7 @@ class Ui_MainWindow(object):
 " }\n"
 " QTableView::item:selected {\n"
 "     color: #fff;\n"
-"     background:rgb(23, 23, 23);\n"
+"     background:rgb(240,185,102);\n"
 " }\n"
 " ")
         self.cspr_tableview.setShowGrid(False)
@@ -4119,9 +4120,16 @@ class Ui_MainWindow(object):
         self.gridLayout.addWidget(self.basics_date, 1, 0, 1, 1)
         self.mainStack.addWidget(self.datetimes)
         self.gridLayout_20.addWidget(self.mainStack, 0, 0, 1, 1)
+        self.exercise_extras = QtWidgets.QFrame(parent=self.centralwidget)
+        self.exercise_extras.setObjectName("exercise_extras")
+        self.verticalLayout_3 = QtWidgets.QVBoxLayout(self.exercise_extras)
+        self.verticalLayout_3.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout_3.setSpacing(0)
+        self.verticalLayout_3.setObjectName("verticalLayout_3")
+        self.gridLayout_20.addWidget(self.exercise_extras, 1, 0, 1, 1)
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(parent=MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 325, 16))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 325, 17))
         self.menubar.setObjectName("menubar")
         self.menuTracker = QtWidgets.QMenu(parent=self.menubar)
         self.menuTracker.setObjectName("menuTracker")
@@ -4336,7 +4344,7 @@ class Ui_MainWindow(object):
         self.mainStack.setCurrentIndex(0)
         self.agendaStack.setCurrentIndex(0)
         self.agenda_journal_stack.setCurrentIndex(0)
-        self.agenda_data_stack.setCurrentIndex(0)
+        self.agenda_data_stack.setCurrentIndex(6)
         self.tabWidget_3.setCurrentIndex(0)
         self.tabWidget.setCurrentIndex(0)
         self.tabWidget_2.setCurrentIndex(0)
@@ -4376,9 +4384,7 @@ class Ui_MainWindow(object):
         MainWindow.setTabOrder(self.teethbrushed_table, self.yoga_table)
         MainWindow.setTabOrder(self.yoga_table, self.lily_walk_btn)
         MainWindow.setTabOrder(self.lily_walk_btn, self.lily_ate_check)
-        MainWindow.setTabOrder(self.lily_ate_check, self.lily_behavior)
-        MainWindow.setTabOrder(self.lily_behavior, self.lily_gait)
-        MainWindow.setTabOrder(self.lily_gait, self.lily_behavior_slider)
+        MainWindow.setTabOrder(self.lily_ate_check, self.lily_behavior_slider)
         MainWindow.setTabOrder(self.lily_behavior_slider, self.lily_gait_slider)
         MainWindow.setTabOrder(self.lily_gait_slider, self.lily_mood)
         MainWindow.setTabOrder(self.lily_mood, self.lily_energy)
@@ -4387,10 +4393,8 @@ class Ui_MainWindow(object):
         MainWindow.setTabOrder(self.lily_energy_slider, self.lily_mood_slider)
         MainWindow.setTabOrder(self.lily_mood_slider, self.lily_activity)
         MainWindow.setTabOrder(self.lily_activity, self.lily_time_in_room_slider)
-        MainWindow.setTabOrder(self.lily_time_in_room_slider, self.lily_walk_note_commit_btn)
-        MainWindow.setTabOrder(self.lily_walk_note_commit_btn, self.lily_time_in_room)
-        MainWindow.setTabOrder(self.lily_time_in_room, self.lily_walk_note)
-        MainWindow.setTabOrder(self.lily_walk_note, self.lily_notes)
+        MainWindow.setTabOrder(self.lily_time_in_room_slider, self.lily_time_in_room)
+        MainWindow.setTabOrder(self.lily_time_in_room, self.lily_notes)
         MainWindow.setTabOrder(self.lily_notes, self.lily_note_commit_btn)
         MainWindow.setTabOrder(self.lily_note_commit_btn, self.lily_data_stack)
         MainWindow.setTabOrder(self.lily_data_stack, self.lily_walk_table)
@@ -4421,43 +4425,43 @@ class Ui_MainWindow(object):
         self.sun_note_one.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'Helvetica\'; font-size:13pt; font-weight:400; font-style:normal;\">\n"
+"</style></head><body style=\" font-family:\'Lato\'; font-size:13pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Arial\'; font-size:12pt;\"><br /></p></body></html>"))
         self.sun_note_one.setPlaceholderText(_translate("MainWindow", "Sunday"))
         self.mon_note_one.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'Helvetica\'; font-size:13pt; font-weight:400; font-style:normal;\">\n"
+"</style></head><body style=\" font-family:\'Lato\'; font-size:13pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Arial\'; font-size:12pt;\"><br /></p></body></html>"))
         self.mon_note_one.setPlaceholderText(_translate("MainWindow", "Monday"))
         self.tues_note_one.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'Helvetica\'; font-size:13pt; font-weight:400; font-style:normal;\">\n"
+"</style></head><body style=\" font-family:\'Lato\'; font-size:13pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Arial\'; font-size:12pt;\"><br /></p></body></html>"))
         self.tues_note_one.setPlaceholderText(_translate("MainWindow", "Tuesday"))
         self.wed_note_one.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'Helvetica\'; font-size:13pt; font-weight:400; font-style:normal;\">\n"
+"</style></head><body style=\" font-family:\'Lato\'; font-size:13pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Arial\'; font-size:12pt;\"><br /></p></body></html>"))
         self.wed_note_one.setPlaceholderText(_translate("MainWindow", "Wednesday"))
         self.thurs_note_one.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'Helvetica\'; font-size:13pt; font-weight:400; font-style:normal;\">\n"
+"</style></head><body style=\" font-family:\'Lato\'; font-size:13pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Arial\'; font-size:12pt;\"><br /></p></body></html>"))
         self.thurs_note_one.setPlaceholderText(_translate("MainWindow", "Thursday"))
         self.fri_note_one.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'Helvetica\'; font-size:13pt; font-weight:400; font-style:normal;\">\n"
+"</style></head><body style=\" font-family:\'Lato\'; font-size:13pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Arial\'; font-size:12pt;\"><br /></p></body></html>"))
         self.fri_note_one.setPlaceholderText(_translate("MainWindow", "Friday"))
         self.sat_note_one.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'Helvetica\'; font-size:13pt; font-weight:400; font-style:normal;\">\n"
+"</style></head><body style=\" font-family:\'Lato\'; font-size:13pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Arial\'; font-size:12pt;\"><br /></p></body></html>"))
         self.sat_note_one.setPlaceholderText(_translate("MainWindow", "Saturday"))
         self.sat_date.setDisplayFormat(_translate("MainWindow", "M-d"))
@@ -4488,28 +4492,28 @@ class Ui_MainWindow(object):
         self.calories.setSuffix(_translate("MainWindow", " cal."))
         self.lily_walk_btn.setToolTip(_translate("MainWindow", "<html><head/><body><p>press opt+cmd+w to commit walk data!</p></body></html>"))
         self.lily_ate_check.setToolTip(_translate("MainWindow", "<html><head/><body><p>Press to <span style=\" font-style:italic;\">commit </span><span style=\" font-weight:600;\">Diet</span> Data</p></body></html>"))
-        self.na_45.setText(_translate("MainWindow", "Gait"))
-        self.na_42.setText(_translate("MainWindow", "Behavior"))
         self.lily_behavior_slider.setToolTip(_translate("MainWindow", "how well my lil lady \n"
 "behaved, did she pull tons \n"
 "or just a little?"))
+        self.lily_walk_note.setPlaceholderText(_translate("MainWindow", "press the paw to commit note ➞"))
+        self.lily_walk_note_commit_btn.setToolTip(_translate("MainWindow", "<html><head/><body><p>press opt+cmd+w to commit walk data!</p></body></html>"))
+        self.na_42.setText(_translate("MainWindow", "Behavior"))
+        self.na_45.setText(_translate("MainWindow", "Gait"))
         self.lily_gait_slider.setToolTip(_translate("MainWindow", "How well my lady\n"
 " walked the wilds!"))
-        self.lily_mood.setToolTip(_translate("MainWindow", "Little wiggly\'s mood for the day!"))
-        self.lily_energy.setToolTip(_translate("MainWindow", "Her overall energy, mostly to notice if she is acting sick"))
-        self.lily_mood_activity_slider.setToolTip(_translate("MainWindow", "Little Lilys activity for the day, that is, her gait, her joy, her spunk :D"))
-        self.lily_energy_slider.setToolTip(_translate("MainWindow", "Her overall energy, mostly to notice if she is acting sick"))
+        self.na_46.setText(_translate("MainWindow", "Lily\'s Mood"))
         self.lily_mood_slider.setToolTip(_translate("MainWindow", "Little wiggly\'s mood for the day!"))
-        self.lily_activity.setToolTip(_translate("MainWindow", "Little Lilys activity for the day, that is, her gait, her joy, her spunk :D"))
-        self.lily_time_in_room_slider.setToolTip(_translate("MainWindow", "<html><head/><body><p>press cntrl+T to commit Time in Room Data</p></body></html>"))
-        self.na_44.setText(_translate("MainWindow", "Lily\'s Energy"))
-        self.lily_walk_note_commit_btn.setToolTip(_translate("MainWindow", "<html><head/><body><p>press opt+cmd+w to commit walk data!</p></body></html>"))
         self.na_43.setText(_translate("MainWindow", "Lily\'s Activity"))
+        self.lily_time_in_room_slider.setToolTip(_translate("MainWindow", "<html><head/><body><p>press cntrl+T to commit Time in Room Data</p></body></html>"))
+        self.lily_energy.setToolTip(_translate("MainWindow", "Her overall energy, mostly to notice if she is acting sick"))
+        self.lily_energy_slider.setToolTip(_translate("MainWindow", "Her overall energy, mostly to notice if she is acting sick"))
+        self.lily_activity.setToolTip(_translate("MainWindow", "Little Lilys activity for the day, that is, her gait, her joy, her spunk :D"))
         self.na_41.setToolTip(_translate("MainWindow", "<html><head/><body><p>press cntrl+T to commit Time in Room Data</p></body></html>"))
         self.na_41.setText(_translate("MainWindow", "In Room"))
-        self.na_46.setText(_translate("MainWindow", "Lily\'s Mood"))
+        self.lily_mood.setToolTip(_translate("MainWindow", "Little wiggly\'s mood for the day!"))
+        self.na_44.setText(_translate("MainWindow", "Lily\'s Energy"))
         self.lily_time_in_room.setToolTip(_translate("MainWindow", "<html><head/><body><p>press cntrl+T to commit Time in Room Data</p></body></html>"))
-        self.lily_walk_note.setPlaceholderText(_translate("MainWindow", "press the paw to commit note ➞"))
+        self.lily_mood_activity_slider.setToolTip(_translate("MainWindow", "Little Lilys activity for the day, that is, her gait, her joy, her spunk :D"))
         self.lily_notes.setPlaceholderText(_translate("MainWindow", "lily\'s notes and such, use the button below to commit to the dbs! ❤ "))
         self.lily_note_commit_btn.setToolTip(_translate("MainWindow", "<html><head/><body><p>press opt+cmd+w to commit walk data!</p></body></html>"))
         self.mood.setToolTip(_translate("MainWindow", "<html><head/><body><p>MOOD</p></body></html>"))
