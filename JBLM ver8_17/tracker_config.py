@@ -24,6 +24,7 @@ STYLESHEET = """
 #fri_date {font-weight:bold; font-size:10pt; color:rgb(127, 154, 214);}
 #sat_date {font-weight:bold; font-size:10pt; color:rgb(115, 165, 204);}
 """
+
 LILY_APP = 'JBLM_LILY_MODULE'
 AGENDA_NAME = 'JBLM_AGENDA_MODULE'
 
